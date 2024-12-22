@@ -51,88 +51,132 @@ $user_email = $_SESSION['email'];
     <link rel="stylesheet" href="skin.css">
     <link rel="icon" href="media/logos/EverestLogo.png">
     <style>
-    .slider {
-        display: flex;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+        .slider {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-    .slider li {
-        flex: 1;
-        position: relative;
-    }
+        .slider li {
+            flex: 1;
+            position: relative;
+        }
 
-    .slider img {
-        width: 100%; /* Make images fill the container */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Prevent any space below the image */
-    }
- .table-container {
-    max-height: 400px; /* Max height for the table container */
-    border: 1px solid #ddd; /* Add a border around the table container */
-    border-radius: 4px; /* Rounded corners for the table container */
-    margin-left: 10px; /* Center the table container */
-}
+        .slider img {
+            width: 100%;
+            /* Make images fill the container */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            /* Prevent any space below the image */
+        }
 
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    background-color: #f9f9f9; /* Light background for the table */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow inside the table */
+        .table-container {
+            max-height: 400px;
+            /* Max height for the table container */
+            border: 1px solid #ddd;
+            /* Add a border around the table container */
+            border-radius: 4px;
+            /* Rounded corners for the table container */
+            margin-left: 10px;
+            /* Center the table container */
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: #f9f9f9;
+            /* Light background for the table */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            /* Light shadow inside the table */
+            text-align: center;
+        }
+
+        .table th,
+        .table td {
+            padding: 12px 18px;
+            /* Spacing for table cells */
+            font-size: 16px;
+            /* Font size for text */
+        }
+
+        .table th {
+            background-color: #4CAF50;
+            /* Green header */
+            color: black;
+            /* White text */
+            text-transform: uppercase;
+            /* Uppercase text for headers */
+            letter-spacing: 1px;
+            /* Slight letter-spacing for headers */
+            border-bottom: 2px solid #ddd;
+            /* Bottom border for the header */
+            text-align: center;
+        }
+
+        .table td {
+            border-bottom: 1px solid #ddd;
+            /* Light border between rows */
+            color: #555;
+            /* Darker text for content */
+            text-align: center;
+        }
+
+        .table tbody tr:hover {
+            background-color: #e6f7e6;
+            /* Light green background on row hover */
+            cursor: pointer;
+            /* Change cursor to pointer on hover */
+        }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #f2f2f2;
+            /* Light gray background for odd rows */
+        }
+
+        .table td a {
+            color: #007bff;
+            /* Blue color for links */
+            text-decoration: none;
+            font-weight: bold;
+            /* Bold links */
+        }
+
+        .table td a:hover {
+            text-decoration: underline;
+            /* Underline link on hover */
+        }
+
+        @media (max-width: 768px) {
+            .table-container {
+                max-height: 200px;
+                /* Smaller max-height for mobile */
+            }
+
+            .table th,
+            .table td {
+                font-size: 14px;
+                /* Smaller font size on mobile */
+            }
+        }
+        .logout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: red;
     text-align: center;
-}
-
-.table th, .table td {
-    padding: 12px 18px; /* Spacing for table cells */
-    font-size: 16px; /* Font size for text */
-}
-
-.table th {
-    background-color: #4CAF50; /* Green header */
-    color: black; /* White text */
-    text-transform: uppercase; /* Uppercase text for headers */
-    letter-spacing: 1px; /* Slight letter-spacing for headers */
-    border-bottom: 2px solid #ddd; /* Bottom border for the header */
-    text-align: center;
-}
-
-.table td {
-    border-bottom: 1px solid #ddd; /* Light border between rows */
-    color: #555; /* Darker text for content */
-    text-align: center;
-}
-
-.table tbody tr:hover {
-    background-color: #e6f7e6; /* Light green background on row hover */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: #f2f2f2; /* Light gray background for odd rows */
-}
-
-.table td a {
-    color: #007bff; /* Blue color for links */
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: bold; /* Bold links */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.table td a:hover {
-    text-decoration: underline; /* Underline link on hover */
+.logout-btn:hover {
+    background-color: darkred;
 }
 
-@media (max-width: 768px) {
-    .table-container {
-        max-height: 200px; /* Smaller max-height for mobile */
-    }
-    .table th, .table td {
-        font-size: 14px; /* Smaller font size on mobile */
-    }
-}
-
-</style>
+    </style>
 </head>
 
 <body class="page-main">
@@ -150,33 +194,34 @@ $user_email = $_SESSION['email'];
             </div>
             <i class="menu-btn"></i>
             <div class="menu-cnt">
-                <ul id="main-menu">
-                    <li class="dropdown">
-                        <a href="#home">Home</a>
-                        <!--<ul>
-                            <li><a href="index.html">Main</a></li>
-                            <li><a href="index-2.html">Home two</a></li>
-                            <li><a href="index-3.html">Home three</a></li>
-                        </ul>
-                    </li>-->
-                    <li class="dropdown">
-                        <a href="#latest-documents">Latest Documents</a>
+    <ul id="main-menu">
+        <li class="dropdown">
+            <a href="#home">Home</a>
+            <!--<ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="index-2.html">Home two</a></li>
+                <li><a href="index-3.html">Home three</a></li>
+            </ul>-->
+        </li>
+        <li class="dropdown">
+            <a href="#latest-documents">Latest Documents</a>
+        </li>
+        <li class="dropdown">
+            <a href="#about-us">About Us</a>
+        </li>
+        <li>
+            <a href="#committe">Managing Committee</a>
+        </li>
+        <li>
+            <a href="#contact-us">Contact Us</a>
+        </li>
+        <li style="color: red;">
+    <a href="./php-files/logout.php" class="logout-btn">Logout</a>
+</li>
 
-                    </li>
-                    <li class="dropdown">
-                        <a href="#about-us">About Us</a>
+    </ul>
+</div>
 
-                    </li>
-                    <li>
-                        <a href="#committe">Managing Committee</a>
-                    </li>
-                    <li>
-                        <a href="#contact-us">Contact Us</a>
-                    </li>
-
-                </ul>
-
-            </div>
         </div>
     </nav>
     <main>
@@ -237,23 +282,24 @@ $user_email = $_SESSION['email'];
                             </div>
                         </div>-->
                     <hr class="space" />
-                    <ul class="slider" data-options="type:carousel,nav:true,perView:3,perViewLg:2,perViewSm:1,gap:30,autoplay:3000">
-    <li>
-        <a class="img-box lightbox" href="./Images/Everest1.jpg" data-lightbox-anima="fade-top">
-            <img src="./Images/Everest1.jpg" alt="">
-        </a>
-    </li>
-    <li>
-        <a class="img-box lightbox" href="./Images/Everest2.jpg" data-lightbox-anima="fade-top">
-            <img src="./Images/Everest2.jpg" alt="">
-        </a>
-    </li>
-    <li>
-        <a class="img-box lightbox" href="./Images/Everest3.jpg" data-lightbox-anima="fade-top">
-            <img src="./Images/Everest3.jpg" alt="">
-        </a>
-    </li>
-</ul>
+                    <ul class="slider"
+                        data-options="type:carousel,nav:true,perView:3,perViewLg:2,perViewSm:1,gap:30,autoplay:3000">
+                        <li>
+                            <a class="img-box lightbox" href="./Images/Everest1.jpg" data-lightbox-anima="fade-top">
+                                <img src="./Images/Everest1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="img-box lightbox" href="./Images/Everest2.jpg" data-lightbox-anima="fade-top">
+                                <img src="./Images/Everest2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="img-box lightbox" href="./Images/Everest3.jpg" data-lightbox-anima="fade-top">
+                                <img src="./Images/Everest3.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <hr class="space-lg" />
@@ -557,71 +603,119 @@ $user_email = $_SESSION['email'];
                 </table>
             </div>
         </section>
-        <section class="section-slider alpins-slider light section-full-width-left" data-slider-parallax="true" data-interval="0" id="committe">
-    <div class="background-slider">
-        <div class="active" style="background-image:url(media/hd-3.jpg)"></div>
-        <div style="background-image:url(media/hd-4.jpg)"></div>
-        <div style="background-image:url(media/hd-5.jpg)"></div>
-        <div style="background-image:url(media/hd-6.jpg)"></div>
-        <div style="background-image:url(media/hd-7.jpg)"></div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <!-- Table with Advanced Styles -->
-                <div class="table-container">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Destination</th>
-                                <th>Contact Info</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Bianco</td>
-                                <td><a href="mailto:contact@bianco.com">Contact Now</a></td>
-                            </tr>
-                            <tr>
-                                <td>Civetta</td>
-                                <td><a href="mailto:contact@civetta.com">Contact Now</a></td>
-                            </tr>
-                            <tr>
-                                <td>Teton</td>
-                                <td><a href="mailto:contact@teton.com">Contact Now</a></td>
-                            </tr>
-                            <tr>
-                                <td>Corsica</td>
-                                <td><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@corsica.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact Now</a></td>
-                            </tr>
-                            <tr>
-                                <td>Norda</td>
-                                <td><a href="mailto:contact@norda.com">Contact Now</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
+        <section class="section-slider alpins-slider light section-full-width-left" data-slider-parallax="true"
+            data-interval="0" id="committe">
+            <div class="background-slider">
+                <div class="active" style="background-image:url(media/hd-3.jpg)"></div>
+                <div style="background-image:url(media/hd-4.jpg)"></div>
+                <div style="background-image:url(media/hd-5.jpg)"></div>
+                <div style="background-image:url(media/hd-6.jpg)"></div>
+                <div style="background-image:url(media/hd-7.jpg)"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- Table with Advanced Styles -->
+                        <div class="table-container">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Destination</th>
+                                        <th>Contact Info</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sanjay Menon</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=sanjay@sansula.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shailesh Ghatlia</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=sghatalia@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dhiraj Mahtaney</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=dhiraj@apparelize.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jai Thakur</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=jaithakur@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ajay Jain</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=ajaysck@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mekaal Godhwani</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=sovertan@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jalpa Vithalani</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=vithalani.family@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anjali Shetty</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=anjushetty@me.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jagdish Moorjani</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=vidya.moorjani@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Karan Singh Dugal</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=karandugal@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suveer Khemlani</td>
+                                        <td><a
+                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=ushanp@usha.co.in&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
+                                                Now</a></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-anima="fade-left" data-time="2000">
+                        <h1 class="text-lg text-uppercase text-black">Empowering Our Future: Meet the Committee</h1>
+                        <p>
+                        "Our dedicated committee members bring together a wealth of experience, passion, and vision to drive our initiatives forward. Together, they lead with purpose and inspire positive change."
+                        </p>
+                        <hr class="space hidden-md" />
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-6" data-anima="fade-left" data-time="2000">
-                <h1 class="text-lg text-uppercase text-black">The treks of our team</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiure consectetur adipisicing a
-                    didunto persmo.
-                </p>
-                <a href="treks.html" class="btn btn-sm btn-circle">All treks</a> <a href="team.html"
-                    class="btn btn-sm btn-circle btn-border">The team</a>
-                <hr class="space hidden-md" />
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
 
         <section class="section-base" id="contact-us">
             <div class="container">
                 <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1974.1427773757296!2d72.79979462572422!3d18.954021244502954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cde3062e4c27%3A0x96c86a21c5a99102!2sEverest%20Apartments!5e1!3m2!1sen!2sin!4v1734885574555!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1974.1427773757296!2d72.79979462572422!3d18.954021244502954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cde3062e4c27%3A0x96c86a21c5a99102!2sEverest%20Apartments!5e1!3m2!1sen!2sin!4v1734885574555!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <hr class="space" />
                 <div class="row">
@@ -630,9 +724,7 @@ $user_email = $_SESSION['email'];
                             <h2>Write us</h2>
                             <p>Contact us from here</p>
                         </div>
-                        <form
-                            action="php-files/contactus.php"
-                            class="form-box form-ajax" method="post">
+                        <form action="php-files/contactus.php" class="form-box" method="post">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <p>Name</p>
@@ -645,23 +737,25 @@ $user_email = $_SESSION['email'];
                                         required>
                                 </div>
                             </div>
-                            <p>Messagge</p>
-                            <textarea id="messagge" name="messagge" class="input-textarea"
+                            <p>Message</p>
+                            <textarea id="message" name="message" class="input-textarea"
                                 placeholder="Write something ..." required></textarea>
                             <div class="form-checkbox">
                                 <input type="checkbox" id="check" name="check" value="check" required>
                                 <label for="check">You accept the terms of service and the privacy policy</label>
                             </div>
-                            <button class="btn btn-sm" type="submit">Send messagge</button>
-                            <div class="success-box">
+                            <button class="btn btn-sm" type="submit">Send message</button>
+                            <div class="success-box" style="display:none;">
                                 <div class="alert alert-success">Congratulations. Your message has been sent
                                     successfully</div>
                             </div>
-                            <div class="error-box">
+                            <div class="error-box" style="display:none;">
                                 <div class="alert alert-warning">Error, please retry. Your message has not been sent
                                 </div>
                             </div>
+
                         </form>
+
                     </div>
                     <div class="col-lg-4">
                         <div class="title">
@@ -672,7 +766,8 @@ $user_email = $_SESSION['email'];
                             <li><b>Address</b>
                                 <hr />
                                 <p>EVEREST APARTMENTS CO-OP. <br> HOUSING SOCIETY LTD <br>OPP: MOUNT PLEASANT ROAD,
-                                    <br>MALABAR HILL</p>
+                                    <br>MALABAR HILL
+                                </p>
                             </li>
 
                             <li><b>Email</b>
@@ -686,12 +781,12 @@ $user_email = $_SESSION['email'];
 
                         </ul>
                         <hr class="space-sm" />
-                        <div class="icon-links icon-social icon-links-grid social-colors-hover">
+                        <!-- <div class="icon-links icon-social icon-links-grid social-colors-hover">
                             <a class="facebook"><i class="icon-facebook"></i></a>
                             <a class="twitter"><i class="icon-twitter"></i></a>
                             <a class="instagram"><i class="icon-instagram"></i></a>
                             <a class="google"><i class="icon-google"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -700,13 +795,13 @@ $user_email = $_SESSION['email'];
     <footer class="light">
         <div class="container">
             <div class="row ">
-                <div class="col-lg-4">
+                <div class="col-lg-5" style="margin-right: 140px;">
                     <img src="./media//logos//EverestLogo.png" class="mb-4" alt="">
                     <p>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD.
                         Located at Mount Pleasant Road, Malabar Hill,
                         a prime residential area offering comfort and convenience.</p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-5">
                     <h3>Contacts</h3>
                     <ul class="icon-list icon-line">
                         <li>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD. OPP: MOUNT PLEASANT ROAD, MALABAR HILL</li>
@@ -714,15 +809,14 @@ $user_email = $_SESSION['email'];
                         <li>022-23633911</li>
                     </ul>
                 </div>
-                <div class="col-lg-4">
+                <!-- <div class="col-lg-4">
                     <div class="icon-links icon-social icon-links-grid social-colors">
                         <a class="facebook"><i class="icon-facebook"></i></a>
                         <a class="twitter"><i class="icon-twitter"></i></a>
                         <a class="instagram"><i class="icon-instagram"></i></a>
                         <a class="google"><i class="icon-google"></i></a>
-                    </div>
+                    </div> -->
                     <hr class="space-sm" />
-                </div>
             </div>
         </div>
         <div class="footer-bar">
@@ -755,6 +849,38 @@ $user_email = $_SESSION['email'];
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <!-- Include Bootstrap CSS (if not already included) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        document.querySelector('.form-box').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent default form submission behavior
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            // Hide existing messages
+            document.querySelector('.success-box').style.display = 'none';
+            document.querySelector('.error-box').style.display = 'none';
+
+            // Send the form data via fetch
+            fetch('php-files/contactus.php', {
+                method: 'POST',
+                body: formData,
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.success) {
+                        document.querySelector('.success-box').style.display = 'block';
+                        document.querySelector('.form-box').reset();
+                    } else {
+                        document.querySelector('.error-box').style.display = 'block';
+                    }
+                })
+                .catch(() => {
+                    // Show error box if the request fails
+                    document.querySelector('.error-box').style.display = 'block';
+                });
+        });
+
+    </script>
 </body>
 
 <!-- Mirrored from templates.themekit.dev/alpins/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Dec 2024 05:27:41 GMT -->

@@ -3,52 +3,48 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-  $name=$_POST['name'];
-  $email=$_POST['email'];
-  $msg=$_POST['message'];
+require '../PHPMailer/src/Exception.php';
+require '../PHPMailer/src/PHPMailer.php';
+require '../PHPMailer/src/SMTP.php';
 
-  require '.vendor/phpmailer/src/Exception.php';
-require '.vendor/phpmailer/src/PHPMailer.php';
-require '.vendor/phpmailer/src/SMTP.php';
+$name = isset($_POST['name']) ? trim($_POST['name']) : '';
+$message = isset($_POST['message']) ? trim($_POST['message']) : '';
+$email = isset($_POST['email']) ? trim($_POST['email']) : '';
 
+if (empty($name) || empty($email) || empty($message)) {
+    http_response_code(400); // Bad request
+    echo json_encode(["success" => false, "message" => "All fields are required."]);
+    exit;
+}
 
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    http_response_code(400); // Bad request
+    echo json_encode(["success" => false, "message" => "Invalid email format."]);
+    exit;
+}
 
-//Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
 try {
-    //Server settings
-    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'veenatheveenagroup@gmail.com';                     //SMTP username
-    $mail->Password   = 'phac mbga bbli vmow';                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->isSMTP();
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'veenatheveenagroup@gmail.com';
+    $mail->Password   = 'phac mbga bbli vmow'; 
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port       = 465;
 
-    //Recipients
     $mail->setFrom('veenatheveenagroup@gmail.com', 'Everest Apartments CHS Website');
-    $mail->addAddress('veena@veenaservices.com', 'Veena Naik');     //Add a recipient
-    $mail->addAddress('ompandey.veenagroup@gmail.com', 'Society');               //Name is optional
-    //$mail->addReplyTo('info@example.com', 'Information');
-    //$mail->addCC('cc@example.com');
-    //$mail->addBCC('bcc@example.com');
+    $mail->addAddress('ompandey.veenagroup@gmail.com', 'Society');
 
-    //Attachments
-    //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
-
-    //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->isHTML(true);
     $mail->Subject = 'Message From Everest Apartments CHS Website';
-    $mail->Body    = "Name: $name <br> Email: $email <br> Message: $msg";
+    $mail->Body    = "Name: $name <br> Email: $email <br> Message: $message";
 
     $mail->send();
-    echo "Message has been sent";
+    echo json_encode(["success" => true, "message" => "Message has been sent successfully."]);
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    http_response_code(500); // Internal server error
+    echo json_encode(["success" => false, "message" => "Message could not be sent."]);
 }
-
-
 ?>

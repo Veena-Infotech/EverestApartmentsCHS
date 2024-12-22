@@ -29,40 +29,34 @@ if (isset($_POST['login_btn'])) {
     } else {
         // Ensure database connection is established
         if ($conn) {
-            // Query to fetch user by email and password
+            // Query to fetch user by email
             $query = "SELECT * FROM users WHERE email_id = ?";
             $stmt = $conn->prepare($query);
+            $stmt->bind_param("s", $email);
+            $stmt->execute();
+            $result = $stmt->get_result();
 
-            if ($stmt) {
-                // Bind parameters and execute the query
-                $stmt->bind_param("s", $email);
-                $stmt->execute();
-                $result = $stmt->get_result();
+            // Check if the user exists
+            if ($result->num_rows > 0) {
+                $user = $result->fetch_assoc();
 
-                // Check if the user exists
-                if ($result->num_rows > 0) {
-                    $user = $result->fetch_assoc();
+                // Directly compare the entered password with the stored password
+                if ($password == $user['password']) {
+                    // User authenticated
+                    $_SESSION['email'] = $email; // Store email in session
 
-                    // Verify password (assuming passwords are hashed)
-                    if (password_verify($password, $user['password'])) {
-                        // User authenticated
-                        $_SESSION['email'] = $email; // Store email in session
-
-                        // Redirect to the homepage
-                        header("Location: main-page.php");
-                        exit;
-                    } else {
-                        $error_message = "Invalid email or password.";
-                    }
+                    // Redirect to the homepage
+                    header("Location: main-page.php");
+                    exit;
                 } else {
                     $error_message = "Invalid email or password.";
                 }
-
-                // Close the statement
-                $stmt->close();
             } else {
-                $error_message = "Failed to prepare the SQL statement: " . $conn->error;
+                $error_message = "Invalid email or password.";
             }
+
+            // Close the statement
+            $stmt->close();
         } else {
             $error_message = "Database connection failed.";
         }
@@ -73,6 +67,7 @@ if (isset($_POST['login_btn'])) {
 }
 
 ?>
+
 
 
 <!DOCTYPE html>
@@ -204,19 +199,33 @@ if (isset($_POST['login_btn'])) {
             font-size: 20px;
             margin-top: 30px;
         }
+        .toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-weight: bold;
+}
+
     </style>
     <script>
         function validateForm(event) {
             event.preventDefault();
 
-            const username = document.getElementById('username');
+            const email id = document.getElementById('email id');
             const password = document.getElementById('password');
-            const usernameError = document.getElementById('username-error');
+            const usernameError = document.getElementById('email id-error');
             const passwordError = document.getElementById('password-error');
 
             let valid = true;
 
-            if (username.value.trim() === '') {
+            if (email id.value.trim() === '') {
                 usernameError.textContent = 'Username is required';
                 valid = false;
             } else {
@@ -237,6 +246,26 @@ if (isset($_POST['login_btn'])) {
     </script>
 </head>
 <body>
+<?php
+    if (isset($_GET['logged_out']) && $_GET['logged_out'] == 'true') {
+        echo "
+        <div id='toast' class='toast'>
+            You have successfully logged out.
+        </div>
+        <script>
+            // Show toast and hide it after 3 seconds
+            window.onload = function() {
+                var toast = document.getElementById('toast');
+                toast.style.opacity = 1;
+                setTimeout(function() {
+                    toast.style.opacity = 0;
+                }, 3000);
+            }
+        </script>
+        ";
+    }
+?>
+
     <div class="container">
         <div class="row">
             <div class="logo">
@@ -247,9 +276,9 @@ if (isset($_POST['login_btn'])) {
         <h2>Login</h2>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
             <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="email" placeholder="Enter your username">
-                <div id="username-error" class="error-message"></div>
+                <label for="email id">Username</label>
+                <input type="text" id="email id" name="email" placeholder="Enter your email id">
+                <div id="email id-error" class="error-message"></div>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>

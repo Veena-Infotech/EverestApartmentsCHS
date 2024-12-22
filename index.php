@@ -80,6 +80,8 @@ if (isset($_POST['login_btn'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/logos/EverestLogo.png">
+    <title>Everest Apartments | login</title>
     <title>Glass Login Page</title>
     <style>
         * {

@@ -72,9 +72,7 @@ if (isset($_POST['login_btn'])) {
     $conn->close();
 }
 
-
 ?>
-
 
 
 <!DOCTYPE html>

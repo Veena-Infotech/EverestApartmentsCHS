@@ -1,3 +1,33 @@
+<?php
+// Start the session to access session variables
+session_start();
+
+// Set session timeout duration in seconds (30 minutes)
+$timeout_duration = 30 * 60; // 30 minutes = 1800 seconds
+
+// Check if the user is logged in by verifying the email session variable
+if (!isset($_SESSION['email'])) {
+    // If the email session is not set, redirect to the login page
+    header("Location: index.php");
+    exit;
+}
+
+// Check for session timeout
+if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) > $timeout_duration) {
+    // If the session is older than 30 minutes, destroy the session and redirect to the login page
+    session_unset(); // Unset all session variables
+    session_destroy(); // Destroy the session
+    header("Location: index.php?session_timeout=true");
+    exit;
+}
+
+// Update the last activity time to the current time
+$_SESSION['last_activity'] = time();
+
+// Get the logged-in user's email
+$user_email = $_SESSION['email'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

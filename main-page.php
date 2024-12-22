@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="themekit/css/media-box.css">
     <link rel="stylesheet" href="skin.css">
     <link rel="icon" href="media/favicon.png">
+        <!-- Include Bootstrap CSS (if not already included) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
 </head>
 
 <body class="page-main">
@@ -147,103 +150,95 @@
         </section>
         <!---modal section-->
 
-        <section id="minutes" class="blog-area pt-125">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="section-title text-center pb-25">
-                            <h3 class="title mb-15">Notices & Minutes</h3>
-                            <p>Stay informed and engaged with the latest updates, announcements, and minutes from our society meetings.
-                            </p>
+
+<!-- Your section with blog posts and modal triggers -->
+<section id="minutes" class="blog-area pt-125">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section-title text-center pb-25">
+                    <h3 class="title mb-15">Notices & Minutes</h3>
+                    <p>Stay informed and engaged with the latest updates, announcements, and minutes from our society meetings.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <!-- First Blog Post -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog mt-30">
+                    <div class="blog-image">
+                        <img src="./Images/Note1.png" alt="CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION">
+                    </div>
+                    <div class="blog-content">
+                        <div class="content">
+                            <h4 class="title">
+                                <a class="clickLink" data-bs-toggle="modal" data-bs-target="#CircularDated28thNov">CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION</a>
+                            </h4>
+                            <span>28th November, 2024</span>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog mt-30">
-                            <div class="blog-image">
-                                <img src="./Images//Note1.png" alt="CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION">
-                            </div>
-                            <div class="blog-content">
-                                <div class="content">
-                                    <h4 class="title"><a class="clickLink" data-bs-toggle="modal" data-bs-target="#CircularDated28thNov">CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION</a></h4>
-                                    <span>28th November, 2024</span>
-                                </div>
-                            </div>
+            </div>
+
+            <!-- Second Blog Post -->
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog mt-30">
+                    <div class="blog-image">
+                        <img src="./Images/Note2.png" alt="Notice for Special General Body Meeting 17th Nov 2024">
+                    </div>
+                    <div class="blog-content">
+                        <div class="content">
+                            <h4 class="title">
+                                <a class="clickLink" data-bs-toggle="modal" data-bs-target="#NoticeSGBM17th">Notice for Special General Body Meeting 17th Nov 2024</a>
+                            </h4>
+                            <span>7th November, 2024</span>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog mt-30">
-                            <div class="blog-image">
-                                <img src="./Images//Note2.png" alt="Notice  for Special General Body Meeting 17th Nov 2024">
-                            </div>
-                            <div class="blog-content">
-                                <div class="content">
-                                    <h4 class="title"><a class="clickLink" data-bs-toggle="modal"
-                                            data-bs-target="#NoticeSGBM17th">Notice for Special General Body Meeting 17th Nov 2024</a></h4>
-                                    <span>7th November, 2024</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-            
-
-                    <!---Documents-section-->
-
-                    <section>
-    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov" tabindex="-1"
-      aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+<!-- Modal for Circular Dated 28th Nov -->
+<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov" tabindex="-1" aria-labelledby="CircularDated28thNovLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
             <object width="100%" height="700"
               data="./Documents/SGBM24NOV.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
               type="application/pdf"> </object>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</div>
 
-  <section>
-    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="NoticeSGBM17th" tabindex="-1"
-      aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+<!-- Modal for Notice SGBM 17th Nov -->
+<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="NoticeSGBM17th" tabindex="-1" aria-labelledby="NoticeSGBM17thLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
             <object width="100%" height="700"
-              data="./Documents/SGBMNOTICE.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
+              data="./Documents/SGMNOTICE.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
               type="application/pdf"> </object>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
-      </div>
     </div>
-    
-  </section>
+</div>
 
 
-
-
-
-                </div>
-            </div>
-            </div>
-        </section>
         <!-- <div class="row">
                     <div class="col-lg-8">
                         <ul class="slider controls-right" data-options="perView:2,perViewSm:1,gap:30,controls:out">
@@ -633,7 +628,12 @@
         <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="../../themekit.dev/tools/sidebar/sidebar.js" data-setting="alpins"></script>
         <script src="https://kit.fontawesome.com/7260486d2e.js" crossorigin="anonymous"></script>
+        
     </footer>
+    
+<!-- Include Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 
 <!-- Mirrored from templates.themekit.dev/alpins/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Dec 2024 05:27:41 GMT -->

@@ -79,15 +79,15 @@
                                     <span class="quote-author">Ralph Emerson</span>
                                 </p>
                             </li>
-                            <li>
+                            <!--<li>
                                 <p class="quote">
                                     When everything feels like an uphill struggle. Just wait and think of the view from the top.
                                     <span class="quote-author">Wislawa Symborska</span>
                                 </p>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
-                    <div class="col-lg-6">
+                    <!--<div class="col-lg-6">
                         <hr class="space-xs" />
                         <div class="counter counter-vertical counter-icon">
                             <div>
@@ -117,7 +117,7 @@
                                     <span>+</span>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                         <hr class="space" />
                         <ul class="slider" data-options="type:carousel,nav:true,perView:3,perViewLg:2,perViewSm:1,gap:30,controls:out,autoplay:3000">
                             <li>

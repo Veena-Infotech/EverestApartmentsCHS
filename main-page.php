@@ -20,6 +20,16 @@
     <link rel="stylesheet" href="themekit/css/media-box.css">
     <link rel="stylesheet" href="skin.css">
     <link rel="icon" href="media/favicon.png">
+    <style>
+        #pdfViewer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 
 <body class="page-main">
@@ -189,52 +199,52 @@
                     </div>
 
 
-            
+
 
                     <!---Documents-section-->
 
                     <section>
-    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov" tabindex="-1"
-      aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <object width="100%" height="700"
-              data="./Documents/SGBM24NOV.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
-              type="application/pdf"> </object>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <object width="100%" height="700"
+                                            data="./Documents/SGBM24NOV.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
+                                            type="application/pdf"> </object>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-  <section>
-    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="NoticeSGBM17th" tabindex="-1"
-      aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <object width="100%" height="700"
-              data="./Documents/SGBMNOTICE.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
-              type="application/pdf"> </object>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </section>
+                    <section>
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="NoticeSGBM17th" tabindex="-1"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <object width="100%" height="700"
+                                            data="./Documents/SGBMNOTICE.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
+                                            type="application/pdf"> </object>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
 
 
 
@@ -591,17 +601,19 @@
     </main>
     <footer class="light">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-lg-4">
-                    <h3>Alpins</h3>
-                    <p>Somewhere between the bottom of the climb and the summit is the answer to the mystery why we climb.</p>
+                    <img src="./media//logos//EverestLogo.png" alt="">
+                    <p>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD.
+                        Located at Mount Pleasant Road, Malabar Hill,
+                        a prime residential area offering comfort and convenience.</p>
                 </div>
                 <div class="col-lg-4">
                     <h3>Contacts</h3>
                     <ul class="icon-list icon-line">
-                        <li>San Pellegrino, BG, Italy</li>
-                        <li>hello@example.com</li>
-                        <li>02 123 333 444</li>
+                        <li>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD. OFF: MOUNT PLEASANT ROAD, MALABAR HILL</li>
+                        <li>everestapts@gmail.com</li>
+                        <li>022-23633911</li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
@@ -612,15 +624,19 @@
                         <a class="google"><i class="icon-google"></i></a>
                     </div>
                     <hr class="space-sm" />
-                    <p>Subscribe to our newsletter of follow us on the social channels to stay tuned.</p>
                 </div>
             </div>
         </div>
         <div class="footer-bar">
             <div class="container">
-                <span>© 2019 Alpins - Hiking & Outdoor Template Handmade by <a href="https://schiocco.com/" target="_blank">schiocco.com</a>.</span>
-                <span><a href="contacts.html">Contact us</a> | <a href="#">Privacy policy</a></span>
+                <div class="d-flex justify-content-center align-items-center text-center py-3">
+                    <span>
+                        © 2024 EVEREST APARTMENTS CHS LTD - DEVELOPED BY
+                        <a href="https://www.theveenagroup.com/index.html" target="_blank">Veena Infotech</a>.
+                    </span>
+                </div>
             </div>
+
         </div>
         <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
         <script src="themekit/scripts/parallax.min.js"></script>

@@ -192,15 +192,9 @@
                         </div>
                     </div>
 
-
-            
-
-                    <!---Documents-section-->
-
-                    <section>
-    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov" tabindex="-1"
-      aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+<!-- Modal for Circular Dated 28th Nov (error in zooming) -->
+<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov" tabindex="-1" aria-labelledby="CircularDated28thNovLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

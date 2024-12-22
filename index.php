@@ -81,7 +81,7 @@ if (isset($_POST['login_btn'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="media/logos/EverestLogo.png">
-    <title>Everest Apartments | login</title>
+    <title>Everest Apartments CHS Ltd. | login</title>
     <title>Glass Login Page</title>
     <style>
         * {
@@ -199,6 +199,11 @@ if (isset($_POST['login_btn'])) {
             margin-top: -120px;
             margin-bottom: 15px;
         }
+        .error-message{
+            color: red;
+            font-size: 20px;
+            margin-top: 30px;
+        }
     </style>
     <script>
         function validateForm(event) {
@@ -253,11 +258,14 @@ if (isset($_POST['login_btn'])) {
             </div>
             <button type="submit" name="login_btn" class="btn">Login</button>
         </form>
- <?php       
-// Output error message (can be handled on the same page or redirected to another)
-if (!empty($error_message)) {
-    echo "<p>'$error_message'</p>";
-}
-?>
+        <div class="error-message">
+            <?php       
+                // Output error message (can be handled on the same page or redirected to another)
+                if (!empty($error_message)) {
+                    echo "<p>'$error_message'</p>";
+                }
+            ?>
+        </div>
+ 
 </body>
 </html>

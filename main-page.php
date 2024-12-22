@@ -20,9 +20,6 @@
     <link rel="stylesheet" href="themekit/css/media-box.css">
     <link rel="stylesheet" href="skin.css">
     <link rel="icon" href="media/favicon.png">
-     <!-- Include Bootstrap CSS (if not already included) -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
 </head>
 
 <body class="page-main">
@@ -151,34 +148,30 @@
         <!---modal section-->
 
 
-<!-- Your section with blog posts and modal triggers -->
-<section id="minutes" class="blog-area pt-125">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                <div class="section-title text-center pb-25">
-                    <h3 class="title mb-15">Notices & Minutes</h3>
-                    <p>Stay informed and engaged with the latest updates, announcements, and minutes from our society meetings.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <!-- First Blog Post -->
-            <div class="col-lg-4 col-md-6">
-                <div class="single-blog mt-30">
-                    <div class="blog-image">
-                        <img src="./Images/Note1.png" alt="CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION">
+        <!-- Your section with blog posts and modal triggers -->
+        <section id="minutes" class="blog-area pt-125">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                       
                     </div>
-                    <div class="blog-content">
-                        <div class="content">
-                            <h4 class="title">
-                                <a class="clickLink" data-bs-toggle="modal" data-bs-target="#CircularDated28thNov">CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION</a>
-                            </h4>
-                            <span>28th November, 2024</span>
+                </div>
+                <div class="row justify-content-center">
+                    <!-- First Blog Post -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog mt-30">
+                            <div class="blog-image">
+                                <img src="./Images/Note1.png" alt="CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION">
+                            </div>
+                            <div class="blog-content">
+                                <div class="content">
+                                    <h4 class="title">
+                                        <a class="clickLink" data-bs-toggle="modal" data-bs-target="#CircularDated28thNov">CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION</a>
+                                    </h4>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog mt-30">
@@ -189,53 +182,67 @@
                                 <div class="content">
                                     <h4 class="title"><a class="clickLink" data-bs-toggle="modal"
                                             data-bs-target="#NoticeSGBM17th">Notice for Special General Body Meeting 17th Nov 2024</a></h4>
-                                    <span>7th November, 2024</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-<!-- Modal for Circular Dated 28th Nov (error in zooming) -->
-<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov" tabindex="-1" aria-labelledby="CircularDated28thNovLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <object width="100%" height="700"
-              data="./Documents/SGBM24NOV.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
-              type="application/pdf"> </object>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+                    <!-- Modal for Circular Dated 28th Nov (error in zooming) -->
+                    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov" tabindex="-1" aria-labelledby="CircularDated28thNovLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <object width="100%" height="700"
+                                        data="./Documents/SGBM24NOV.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
+                                        type="application/pdf"> </object>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <hr class="space-sm visible-sm" />
+                        <div class="title">
+                            <h2>Newly Provided Documents</h2>
+                            <p>Explore a wealth of resources and discover new possibilities.</p>
+                        </div>
+                        <p>
+                            Access a collection of carefully curated documents to enrich your knowledge.
+                            These materials are designed to guide, inform, and inspire your journey.
+                        </p>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
 
-  <section>
-    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="NoticeSGBM17th" tabindex="-1"
-      aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <object width="100%" height="700"
-              data="./Documents/SGBMNOTICE.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
-              type="application/pdf"> </object>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-  </section>
+        <section>
+            <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="NoticeSGBM17th" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src="./Documents/SGMNOTICE.pdf?#zoom=10&scrollbar=0&toolbar=0&navpanes=0" width="100%" height="700" style="border: none;"></iframe>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+
+        </section>
 
 
 
@@ -310,19 +317,18 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#">About our treks and trips</a>
+                                <a href="#">Living at Everest Apartments Malabar Hill</a>
                                 <div class="content">
                                     <p>
-                                        We curate treks and trips that cater to adventurers of all levels. From easy nature walks to challenging climbs, experience unforgettable journeys filled with scenic beauty and adventure.
-
+                                    Everest Apartments Malabar Hill offers a refined living experience with spacious homes and world-class amenities. Nestled in the iconic Malabar Hill area, residents enjoy easy access to key locations, panoramic views, and a tranquil atmosphere
                                     </p>
                                 </div>
                             </li>
                             <li>
-                                <a href="#">About our team and guests</a>
+                                <a href="#">Amenities at Everest Apartments</a>
                                 <div class="content">
                                     <p>
-                                        Our experienced team is passionate about creating memorable experiences. We cherish the bond with our guests, ensuring safety, comfort, and lasting friendships.
+                                    Everest Apartments Malabar Hill boasts a range of top-tier amenities designed for ultimate comfort and convenience.
 
                                     </p>
                                 </div>
@@ -555,24 +561,18 @@
                         <ul class="text-list text-list-line">
                             <li><b>Address</b>
                                 <hr />
-                                <p>Pellegrino, Veneto, Italy</p>
+                                <p>EVEREST APARTMENTS CO-OP. <br> HOUSING SOCIETY LTD <br>OPP: MOUNT PLEASANT ROAD, <br>MALABAR HILL</p>
                             </li>
-                            <li><b>Web</b>
-                                <hr />
-                                <p>domain.com</p>
-                            </li>
+                            
                             <li><b>Email</b>
                                 <hr />
-                                <p>info@domain.com</p>
+                                <p>everestapts@gmail.com</p>
                             </li>
                             <li><b>Phone</b>
                                 <hr />
-                                <p>(02) 123 456 789999</p>
+                                <p>022-23633911</p>
                             </li>
-                            <li><b>Skype</b>
-                                <hr />
-                                <p>example.name</p>
-                            </li>
+                            
                         </ul>
                         <hr class="space-sm" />
                         <div class="icon-links icon-social icon-links-grid social-colors-hover">
@@ -590,7 +590,7 @@
         <div class="container">
             <div class="row ">
                 <div class="col-lg-4">
-                    <img src="./media//logos//EverestLogo.png" alt="">
+                    <img src="./media//logos//EverestLogo.png" class="mb-4" alt="">
                     <p>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD.
                         Located at Mount Pleasant Road, Malabar Hill,
                         a prime residential area offering comfort and convenience.</p>
@@ -598,7 +598,7 @@
                 <div class="col-lg-4">
                     <h3>Contacts</h3>
                     <ul class="icon-list icon-line">
-                        <li>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD. OFF: MOUNT PLEASANT ROAD, MALABAR HILL</li>
+                        <li>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD. OPP: MOUNT PLEASANT ROAD, MALABAR HILL</li>
                         <li>everestapts@gmail.com</li>
                         <li>022-23633911</li>
                     </ul>
@@ -636,12 +636,14 @@
         <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="../../themekit.dev/tools/sidebar/sidebar.js" data-setting="alpins"></script>
         <script src="https://kit.fontawesome.com/7260486d2e.js" crossorigin="anonymous"></script>
-        
+
     </footer>
-    
-<!-- Include Bootstrap JS and Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Include Bootstrap CSS (if not already included) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </body>
 
 <!-- Mirrored from templates.themekit.dev/alpins/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Dec 2024 05:27:41 GMT -->

@@ -22,7 +22,7 @@
         }
 
         .container {
-            width: 400px;
+            width: 500px;
             padding: 2rem;
             border-radius: 12px;
             backdrop-filter: blur(10px);
@@ -110,6 +110,16 @@
             font-size: 0.9rem;
             margin-top: 0.5rem;
         }
+        .logo img{
+            width: 170px;
+            height: 170px;
+            border-radius: 1000px;
+            border: rgba(255, 255, 255, 0.1) solid 5px;
+        }
+        .row{
+            margin-top: -120px;
+            margin-bottom: 15px;
+        }
     </style>
     <script>
         function validateForm(event) {
@@ -144,8 +154,14 @@
 </head>
 <body>
     <div class="container">
+        <div class="row">
+            <div class="logo">
+                <img src="media/long-1.jpg" alt="Evest Logo">
+            </div>
+        </div>
+        
         <h2>Login</h2>
-        <form onsubmit="validateForm(event)">
+        <form onsubmit="validateForm(event)" action="login.php" method="POST">
             <div class="form-group">
                 <label for="username">Username</label>
                 <input type="text" id="username" placeholder="Enter your username">

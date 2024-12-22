@@ -7,9 +7,9 @@ use PHPMailer\PHPMailer\Exception;
   $email=$_POST['email'];
   $msg=$_POST['message'];
 
-  require './PHPMailer/src/Exception.php';
-require './PHPMailer/src/PHPMailer.php';
-require './PHPMailer/src/SMTP.php';
+  require '.vendor/phpmailer/src/Exception.php';
+require '.vendor/phpmailer/src/PHPMailer.php';
+require '.vendor/phpmailer/src/SMTP.php';
 
 
 
@@ -23,14 +23,14 @@ try {
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
     $mail->Username   = 'veenatheveenagroup@gmail.com';                     //SMTP username
-    $mail->Password   = 'rdsaakmmgjupqjcl';                               //SMTP password
+    $mail->Password   = 'phac mbga bbli vmow';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('veenatheveenagroup@gmail.com', 'Deepak Mahal Website');
+    $mail->setFrom('veenatheveenagroup@gmail.com', 'Everest Apartments CHS Website');
     $mail->addAddress('veena@veenaservices.com', 'Veena Naik');     //Add a recipient
-    $mail->addAddress('deepakmahalchs@gmail.com', 'Society');               //Name is optional
+    $mail->addAddress('ompandey.veenagroup@gmail.com', 'Society');               //Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
     //$mail->addBCC('bcc@example.com');
@@ -41,7 +41,7 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Message From Deepak Mahal Website';
+    $mail->Subject = 'Message From Everest Apartments CHS Website';
     $mail->Body    = "Name: $name <br> Email: $email <br> Message: $msg";
 
     $mail->send();

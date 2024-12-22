@@ -2,6 +2,7 @@
 <html lang="en">
 
 <!-- Mirrored from templates.themekit.dev/alpins/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Dec 2024 05:27:26 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,16 +21,18 @@
     <link rel="stylesheet" href="skin.css">
     <link rel="icon" href="media/favicon.png">
 </head>
+
 <body class="page-main">
     <div id="preloader"></div>
     <nav class="menu-classic menu-fixed menu-transparent light align-right" data-menu-anima="fade-in">
         <div class="container">
             <div class="menu-brand">
                 <a href="#">
-                    <img class="logo-default scroll-hide" src="media/logo-white-blue.svg" alt="logo" />
+                    <img src="./media//logos//EverestLogo.png" alt="">
+                    <!-- <img class="logo-default scroll-hide" src="media/logo-white-blue.svg" alt="logo" />
                     <img class="logo-retina scroll-hide" src="media/logo-white-blue.svg" alt="logo" />
                     <img class="logo-default scroll-show" src="media/logo-white-solid.svg" alt="logo" />
-                    <img class="logo-retina scroll-show" src="media/logo-white-solid.svg" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logo-white-solid.svg" alt="logo" /> -->
                 </a>
             </div>
             <i class="menu-btn"></i>
@@ -44,12 +47,12 @@
                         </ul>
                     </li>-->
                     <li class="dropdown">
-                        <a href="#">Pages</a>
-                        
+                        <a href="#">Latest Documents</a>
+
                     </li>
                     <li class="dropdown">
                         <a href="treks.html">About Us</a>
-                       
+
                     </li>
                     <li>
                         <a href="blog.html">Managing Committee</a>
@@ -57,8 +60,9 @@
                     <li>
                         <a href="contacts.html">Contacts</a>
                     </li>
+
                 </ul>
-                
+
             </div>
         </div>
     </nav>
@@ -75,8 +79,7 @@
                         <ul class="slider width-50" data-options="type:slider,perView:1">
                             <li>
                                 <p class="quote">
-                                    Do not follow where the path may lead. Go instead where there is no path and leave a trail.
-                                    <span class="quote-author">Ralph Emerson</span>
+                                    (Regn.No: BOM/HSG/556 of 1964, Dated: 13-01-1964)
                                 </p>
                             </li>
                             <!--<li>
@@ -118,115 +121,166 @@
                                 </div>
                             </div>
                         </div>-->
-                        <hr class="space" />
-                        <ul class="slider" data-options="type:carousel,nav:true,perView:3,perViewLg:2,perViewSm:1,gap:30,controls:out,autoplay:3000">
-                            <li>
-                                <a class="img-box btn-video lightbox" href="https://www.youtube.com/watch?v=Lb4IcGF5iTQ" data-lightbox-anima="fade-top">
-                                    <img src="media/image-1.jpg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a class="img-box lightbox" href="media/image-2.jpg" data-lightbox-anima="fade-top">
-                                    <img src="media/image-2.jpg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a class="img-box lightbox" href="media/image-3.jpg" data-lightbox-anima="fade-top">
-                                    <img src="media/image-3.jpg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a class="img-box lightbox" href="media/image-4.jpg" data-lightbox-anima="fade-top">
-                                    <img src="media/image-4.jpg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <hr class="space" />
+                    <ul class="slider" data-options="type:carousel,nav:true,perView:3,perViewLg:2,perViewSm:1,gap:30,autoplay:3000">
+                        <li>
+                            <a class="img-box  lightbox" href="./Images/Everest1.jpg" data-lightbox-anima="fade-top">
+                                <img src="./Images/Everest1.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="img-box lightbox" href="./Images/Everest2.jpg" data-lightbox-anima="fade-top">
+                                <img src="./Images/Everest2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="img-box lightbox" href="./Images/Everest3.jpg" data-lightbox-anima="fade-top">
+                                <img src="./Images/Everest3.jpg" alt="">
+                            </a>
+                        </li>
+
+                    </ul>
                 </div>
-                <hr class="space-lg" />
+            </div>
+            <hr class="space-lg" />
             </div>
         </section>
-        <section class="section-base">
+        <!---modal section-->
+
+        <section id="minutes" class="blog-area pt-125">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="section-title text-center pb-25">
+                            <h3 class="title mb-15">Notices & Minutes</h3>
+                            <p>Stay informed and engaged with the latest updates, announcements, and minutes from our society meetings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog mt-30">
+                            <div class="blog-image">
+                                <img src="./Images//Note1.png" alt="CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION">
+                            </div>
+                            <div class="blog-content">
+                                <div class="content">
+                                    <h4 class="title"><a class="clickLink" data-bs-toggle="modal" data-bs-target="#CircularDated28thNov">CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION</a></h4>
+                                    <span>28th November, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-blog mt-30">
+                            <div class="blog-image">
+                                <img src="./Images//Note2.png" alt="Notice  for Special General Body Meeting 17th Nov 2024">
+                            </div>
+                            <div class="blog-content">
+                                <div class="content">
+                                    <h4 class="title"><a class="clickLink" data-bs-toggle="modal"
+                                            data-bs-target="#NoticeSGBM17th">Notice for Special General Body Meeting 17th Nov 2024</a></h4>
+                                    <span>7th November, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+            
+
+                    <!---Documents-section-->
+
+                    <section>
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <object width="100%" height="700"
+              data="./Documents/SGBM24NOV.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
+              type="application/pdf"> </object>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="NoticeSGBM17th" tabindex="-1"
+      aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <object width="100%" height="700"
+              data="./Documents/SGBMNOTICE.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
+              type="application/pdf"> </object>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+
+
+
+
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- <div class="row">
                     <div class="col-lg-8">
-                        <ul class="slider controls-right" data-options="type:carousel,nav:true,perView:2,perViewSm:1,gap:30,controls:out">
+                        <ul class="slider controls-right" data-options="perView:2,perViewSm:1,gap:30,controls:out">
                             <li>
-                                <div class="cnt-box cnt-box-info" data-href="treks-single.html">
-                                    <div class="extra-field">From $49</div>
-                                    <a href="treks-single.html" class="img-box"><img src="media/image-5.jpg" alt="" /></a>
+                                <div class="cnt-box cnt-box-info">
+                                    <a href="treks-single.html" class="img-box"><img src="./Images/Note1.png" alt="" /></a>
                                     <div class="caption">
-                                        <h2>Bianco Excursion</h2>
-                                        <div class="cnt-info">
-                                            <div><span>Days</span><span>3</span></div>
-                                            <div><span>Group size</span><span>10</span></div>
-                                            <div><span>Difficulty</span><span>Easy</span></div>
-                                        </div>
-                                        <p>
-                                            Monte bianco is a mountain located in the deep nature and rivers.
-                                        </p>
-                                        <div class="bottom-info">
-                                            Monte bianco, Alpes, Italy
-                                        </div>
+                                        <h2>EVEREST APARTMENTS CHSL_SGM NOTICE MEETING Date-24th November 2024</h2>
+
                                     </div>
                                 </div>
                             </li>
                             <li>
-                                <div class="cnt-box cnt-box-info" data-href="treks-single.html">
-                                    <div class="extra-field">From $89</div>
-                                    <a href="treks-single.html" class="img-box"><img src="media/image-6.jpg" alt="" /></a>
+                                <div class="cnt-box cnt-box-info">
+                                    <a href="treks-single.html" class="img-box"><img src="./Images/Note2.png" alt="" /></a>
                                     <div class="caption">
-                                        <h2>Civetta Trekking</h2>
-                                        <div class="cnt-info">
-                                            <div><span>Days</span><span>5</span></div>
-                                            <div><span>Group size</span><span>5</span></div>
-                                            <div><span>Difficulty</span><span>Medium</span></div>
-                                        </div>
-                                        <p>
-                                            Civetta is a mountain located in alps and is one of the most famous.
-                                        </p>
-                                        <div class="bottom-info">
-                                            Civetta, Alpes, Italy
-                                        </div>
+                                        <h2>EA SGBM 24 NOV 2024 MINUTES</h2>
+
                                     </div>
                                 </div>
                             </li>
-                            <li>
-                                <div class="cnt-box cnt-box-info" data-href="treks-single.html">
-                                    <div class="extra-field">From $89</div>
-                                    <a href="treks-single.html" class="img-box"><img src="media/image-7.jpg" alt="" /></a>
-                                    <div class="caption">
-                                        <h2>Nevegal Trekking</h2>
-                                        <div class="cnt-info">
-                                            <div><span>Days</span><span>1</span></div>
-                                            <div><span>Group size</span><span>15</span></div>
-                                            <div><span>Difficulty</span><span>Medium</span></div>
-                                        </div>
-                                        <p>
-                                            Nevegal is a mountain near a great and friendly mountain village.
-                                        </p>
-                                        <div class="bottom-info">
-                                            Civetta, Alpes, Italy
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+
                         </ul>
                     </div>
                     <div class="col-lg-4">
                         <hr class="space-sm visible-sm" />
                         <div class="title">
                             <h2>Newly Provided Documents</h2>
-                            <p>Explore the unexplored world</p>
+                            <p>Explore a wealth of resources and discover new possibilities.</p>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiusmod tempor incididunt utlabore et dolore magna aliqua.
-                            Utenim ad minim veniam quiso.
+                            Access a collection of carefully curated documents to enrich your knowledge.
+                            These materials are designed to guide, inform, and inspire your journey.
                         </p>
-                        <a href="contacts.html" class="btn btn-circle btn-xs">Join us now</a>
                     </div>
-                </div>
-            </div>
+                </div> -->
+        </div>
         </section>
         <section class="section-base section-color">
             <div class="container">
@@ -237,16 +291,15 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <p>
-                            Everest Apartments  is a residential building located on Mount Pleasant Road in Malabar Hill, Mumbai. The property offers 2.5 BHK apartments with a carpet area of approximately 1,200 square feet. Amenities include lift facilities and car parking.
+                            Everest Apartments is a residential building located on Mount Pleasant Road in Malabar Hill, Mumbai. The property offers 2.5 BHK apartments with a carpet area of approximately 1,200 square feet. Amenities include lift facilities and car parking.
 
                         </p>
                     </div>
                     <div class="col-lg-3 no-margin-md">
                         <p>
-                            Malabar Hill is an upscale residential area in South Mumbai, known for its affluent neighborhoods and proximity to landmarks such as the Hanging Gardens and Walkeshwar Temple. 
+                            Malabar Hill is an upscale residential area in South Mumbai, known for its affluent neighborhoods and proximity to landmarks such as the Hanging Gardens and Walkeshwar Temple.
 
-                        <hr class="space-sm" />
-                        <a href="about.html" class="btn-text">Read more</a>
+                            <hr class="space-sm" />
                     </div>
                     <div class="col-lg-6">
                         <ul class="accordion-list" data-open="1">
@@ -452,7 +505,7 @@
                     <div class="col-lg-6" data-anima="fade-left" data-time="2000">
                         <h1 class="text-lg text-uppercase text-black">The treks of our team</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiure consectetur adipisicing a didunto persmo. 
+                            Lorem ipsum dolor sit amet consectetur adipiscing elitsed do eiure consectetur adipisicing a didunto persmo.
                         </p>
                         <a href="treks.html" class="btn btn-sm btn-circle">All treks</a> <a href="team.html" class="btn btn-sm btn-circle btn-border">The team</a>
                         <hr class="space hidden-md" />
@@ -460,10 +513,10 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="section-base">
             <div class="container">
-                <div class="google-map" data-marker="media/marker.png" data-coords="46.01049736894874,11.22314543457037"></div>   
+                <div class="google-map" data-marker="media/marker.png" data-coords="46.01049736894874,11.22314543457037"></div>
                 <hr class="space" />
                 <div class="row">
                     <div class="col-lg-8">
@@ -503,12 +556,27 @@
                             <p>Information</p>
                         </div>
                         <ul class="text-list text-list-line">
-                            <li><b>Address</b><hr /><p>Pellegrino, Veneto, Italy</p></li>
-                            <li><b>Web</b><hr /><p>domain.com</p></li>
-                            <li><b>Email</b><hr /><p>info@domain.com</p></li>
-                            <li><b>Phone</b><hr /><p>(02) 123 456 789999</p></li>
-                            <li><b>Skype</b><hr /><p>example.name</p></li>       
-                        </ul> 
+                            <li><b>Address</b>
+                                <hr />
+                                <p>Pellegrino, Veneto, Italy</p>
+                            </li>
+                            <li><b>Web</b>
+                                <hr />
+                                <p>domain.com</p>
+                            </li>
+                            <li><b>Email</b>
+                                <hr />
+                                <p>info@domain.com</p>
+                            </li>
+                            <li><b>Phone</b>
+                                <hr />
+                                <p>(02) 123 456 789999</p>
+                            </li>
+                            <li><b>Skype</b>
+                                <hr />
+                                <p>example.name</p>
+                            </li>
+                        </ul>
                         <hr class="space-sm" />
                         <div class="icon-links icon-social icon-links-grid social-colors-hover">
                             <a class="facebook"><i class="icon-facebook"></i></a>
@@ -569,4 +637,5 @@
 </body>
 
 <!-- Mirrored from templates.themekit.dev/alpins/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Dec 2024 05:27:41 GMT -->
+
 </html>

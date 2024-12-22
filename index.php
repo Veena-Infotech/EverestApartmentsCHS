@@ -1,4 +1,83 @@
-﻿<!DOCTYPE html>
+﻿<?php
+
+// Start the session
+session_start();
+
+// Include database connection
+include("php-files/conn.php");
+
+// Function to sanitize input
+function sanitizeInput($data) {
+    return htmlspecialchars(strip_tags(trim($data)));
+}
+
+// Initialize an error message variable
+$error_message = "";
+
+// Check if the form is submitted using the 'login_btn'
+if (isset($_POST['login_btn'])) {
+
+    // Fetch and sanitize the posted email and password
+    $email = sanitizeInput($_POST['email']);
+    $password = sanitizeInput($_POST['password']);
+
+    // Validate inputs
+    if (empty($email) || empty($password)) {
+        $error_message = "Both email and password are required.";
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error_message = "Invalid email format.";
+    } else {
+        // Ensure database connection is established
+        if ($conn) {
+            // Query to fetch user by email and password
+            $query = "SELECT * FROM users WHERE email_id = ?";
+            $stmt = $conn->prepare($query);
+
+            if ($stmt) {
+                // Bind parameters and execute the query
+                $stmt->bind_param("s", $email);
+                $stmt->execute();
+                $result = $stmt->get_result();
+
+                // Check if the user exists
+                if ($result->num_rows > 0) {
+                    $user = $result->fetch_assoc();
+
+                    // Verify password (assuming passwords are hashed)
+                    if (password_verify($password, $user['password'])) {
+                        // User authenticated
+                        $_SESSION['email'] = $email; // Store email in session
+
+                        // Redirect to the homepage
+                        header("Location: main-page.php");
+                        exit;
+                    } else {
+                        $error_message = "Invalid email or password.";
+                    }
+                } else {
+                    $error_message = "Invalid email or password.";
+                }
+
+                // Close the statement
+                $stmt->close();
+            } else {
+                $error_message = "Failed to prepare the SQL statement: " . $conn->error;
+            }
+        } else {
+            $error_message = "Database connection failed.";
+        }
+    }
+
+    // Close the connection
+    $conn->close();
+}
+
+
+?>
+
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -147,7 +226,7 @@
             }
 
             if (valid) {
-                alert('Form submitted successfully!');
+                document.getElementById('login-form').submit();
             }
         }
     </script>
@@ -161,20 +240,24 @@
         </div>
         
         <h2>Login</h2>
-        <form onsubmit="validateForm(event)" action="login.php" method="POST">
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Enter your username">
+                <input type="text" id="username" name="email" placeholder="Enter your username">
                 <div id="username-error" class="error-message"></div>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password">
+                <input type="password" id="password" name="password" placeholder="Enter your password">
                 <div id="password-error" class="error-message"></div>
             </div>
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" name="login_btn" class="btn">Login</button>
         </form>
-        <a href="#" class="forgot-password">Forgot Password?</a>
-    </div>
+ <?php       
+// Output error message (can be handled on the same page or redirected to another)
+if (!empty($error_message)) {
+    echo "<p>'$error_message'</p>";
+}
+?>
 </body>
 </html>

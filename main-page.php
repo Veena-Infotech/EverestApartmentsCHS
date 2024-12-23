@@ -326,14 +326,14 @@ $user_email = $_SESSION['email'];
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog mt-30">
                             <div class="blog-image">
-                                <img src="./Images/Note1.png" alt="CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION">
+                                <img src="./Images/Note2.png" alt="CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION">
                             </div>
                             <div class="blog-content">
                                 <div class="content">
                                     <h4 class="title">
                                         <a class="clickLink" data-bs-toggle="modal"
                                             data-bs-target="#CircularDated28thNov">
-                                            SGBM Notice Meeting Date 24th November 2024
+                                            SGBM Minutes Meeting Date 24th November 2024
                                             </a>
                                     </h4>
                                 </div>
@@ -344,7 +344,7 @@ $user_email = $_SESSION['email'];
                     <div class="col-lg-4 col-md-6">
                         <div class="single-blog mt-30">
                             <div class="blog-image">
-                                <img src="./Images//Note2.png"
+                                <img src="./Images//Note1.png"
                                     alt="Notice  for Special General Body Meeting 17th Nov 2024">
                             </div>
                             <div class="blog-content">

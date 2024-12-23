@@ -606,7 +606,7 @@ $user_email = $_SESSION['email'];
         </section>
         <section class="section-slider alpins-slider light section-full-width-left" data-slider-parallax="true" data-interval="0" id="committe">
     <div class="background-slider">
-        <div class="active" style="background-image:url(media/hd-3.jpg)"></div>
+        <div class="active" style="background-image:url(media/bg.jpg)"></div>
         <div style="background-image:url(media/hd-4.jpg)"></div>
         <div style="background-image:url(media/hd-5.jpg)"></div>
         <div style="background-image:url(media/hd-6.jpg)"></div>

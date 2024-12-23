@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 // Start the session
 session_start();
@@ -67,81 +67,28 @@ if (isset($_POST['login_btn'])) {
 }
 
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Everest Apartments CHS Ltd. | Login</title>
+    <meta name="description" content="">
+    <script src="themekit/scripts/jquery.min.js"></script>
+    <script src="themekit/scripts/main.js"></script>
+    <link rel="stylesheet" href="themekit/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="themekit/css/style.css">
+    <link rel="stylesheet" href="themekit/css/glide.css">
+    <link rel="stylesheet" href="themekit/css/magnific-popup.css">
+    <link rel="stylesheet" href="themekit/css/content-box.css">
+    <link rel="stylesheet" href="themekit/css/media-box.css">
+    <link rel="stylesheet" href="themekit/css/contact-form.css">
+    <link rel="stylesheet" href="skin.css">
     <link rel="icon" href="media/logos/EverestLogo.png">
-    <title>Everest Apartments CHS Ltd. | login</title>
-    <title>Glass Login Page</title>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            background: url('media/evest-login-bg.avif') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-        }
-
-        .container {
-            width: 500px;
-            padding: 2rem;
-            border-radius: 12px;
-            backdrop-filter: blur(10px);
-            background: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            text-align: center;
-            position: relative;
-        }
-
-        .container h2 {
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #fff;
-            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .form-group {
-            margin-bottom: 1rem;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 1rem;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 0.8rem;
-            border: none;
-            border-radius: 8px;
-            outline: none;
-            background: rgba(255, 255, 255, 0.3);
-            color: #000;
-            font-size: 1rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-group input::placeholder {
-            color: #666;
-        }
-
         .btn {
             display: block;
             width: 100%;
@@ -157,42 +104,6 @@ if (isset($_POST['login_btn'])) {
             transition: all 0.3s;
             box-shadow: 0 4px 15px rgba(255, 117, 140, 0.3);
             margin-top: 10%;
-        }
-
-        .btn:hover {
-            background: linear-gradient(90deg, #ff758c, #ff7eb3);
-            transform: scale(1.05);
-            box-shadow: 0 6px 20px rgba(255, 117, 140, 0.4);
-        }
-
-        .forgot-password {
-            position: absolute;
-            bottom: -2rem;
-            right: 0;
-            color: #ffffff;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .forgot-password:hover {
-            color: #fff;
-        }
-
-        .error-message {
-            color: #ff5e57;
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-        .logo img{
-            width: 170px;
-            height: 170px;
-            border-radius: 1000px;
-            border: rgba(255, 255, 255, 0.1) solid 5px;
-        }
-        .row{
-            margin-top: -120px;
-            margin-bottom: 15px;
         }
         .error-message{
             color: red;
@@ -214,6 +125,7 @@ if (isset($_POST['login_btn'])) {
 }
 
     </style>
+
     <script>
         function validateForm(event) {
             event.preventDefault();
@@ -244,9 +156,107 @@ if (isset($_POST['login_btn'])) {
             }
         }
     </script>
+
+
 </head>
-<body>
-<?php
+
+<body class="page-main">
+    <div id="preloader"></div>
+
+    <!--<nav class="menu-classic menu-fixed align-right" data-menu-anima="fade-in">
+        <div class="container">
+           <div class="menu-brand">
+                <a href="index.html">
+                    <img class="logo-default scroll-hide" src="media/logo-black-blue-solid.svg" alt="logo" />
+                    <img class="logo-retina scroll-hide" src="media/logo-black-blue-solid.svg" alt="logo" />
+                    <img class="logo-default scroll-show" src="media/logo-white-solid.svg" alt="logo" />
+                    <img class="logo-retina scroll-show" src="media/logo-white-solid.svg" alt="logo" />
+                </a>
+            </div>
+            <i class="menu-btn"></i>
+            <div class="menu-cnt">
+                <ul id="main-menu">
+                    <li class="dropdown">
+                        <a href="#">Home</a>
+                        <ul>
+                            <li><a href="index.html">Main</a></li>
+                            <li><a href="index-2.html">Home two</a></li>
+                            <li><a href="index-3.html">Home three</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Pages</a>
+                        <ul>
+                            <li class="dropdown-submenu">
+                                <a>About</a>
+                                <ul>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                    <li><a href="team-2.html">Team two</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a>Special</a>
+                                <ul>
+                                    <li><a href="food.html">Food</a></li>
+                                    <li><a href="shelters.html">Shelters</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a>Others</a>
+                                <ul>
+                                    <li><a href="prices.html">Prices</a></li>
+                                    <li><a href="history.html">History</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="elements/components/buttons.html">Elements</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="treks.html">Treks</a>
+                        <ul>
+                            <li><a href="treks.html">Treks</a></li>
+                            <li><a href="treks-single.html">Single trek</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+                <div class="menu-right">
+                    <ul class="lan-menu">
+                        <li class="dropdown">
+                            <a href="#"><img src="media/en.png" alt="lang" />EN </a>
+                            <ul>
+                                <li><a href="#"><img src="media/it.png" alt="lang" />IT</a></li>
+                                <li><a href="#"><img src="media/es.png" alt="lang" />ES</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>-->
+    </div>
+    </div>
+    </nav>
+    <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="1080"
+        data-natural-width="1920" data-bleed="0" data-image-src="media/hd-1.jpg" data-offset="0">
+        <div class="container">
+            <h1>Everest Apartments CHS</h1>
+            <h2>(Regn.No: BOM/HSG/556 of 1964, Dated: 13-01-1964)</h2>
+            <!--<ol class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">History</a></li>
+            </ol>-->
+        </div>
+    </header>
+    <?php
     if (isset($_GET['logged_out']) && $_GET['logged_out'] == 'true') {
         echo "
         <div id='toast' class='toast'>
@@ -254,10 +264,10 @@ if (isset($_POST['login_btn'])) {
         </div>
         <script>
             // Show toast and hide it after 3 seconds
-            window.onload = function() {
+            window.onload = function () {
                 var toast = document.getElementById('toast');
                 toast.style.opacity = 1;
-                setTimeout(function() {
+                setTimeout(function () {
                     toast.style.opacity = 0;
                 }, 3000);
             }
@@ -266,35 +276,194 @@ if (isset($_POST['login_btn'])) {
     }
 ?>
 
-    <div class="container">
-        <div class="row">
-            <div class="logo">
-                <img src="media/long-1.jpg" alt="Evest Logo">
+
+    <section class="section-base" id="contact-us">
+        <div class="container">
+            <!--<div class="google-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1974.1427773757296!2d72.79979462572422!3d18.954021244502954!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cde3062e4c27%3A0x96c86a21c5a99102!2sEverest%20Apartments!5e1!3m2!1sen!2sin!4v1734885574555!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>-->
+            <hr class="space" />
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="title">
+                        <h2>LOG IN</h2>
+                        <p>LOG IN TO EXPLORE</p>
+                    </div>
+                    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>User Name</p>
+                                <input type="text" id="email id" name="email" placeholder="Enter your email id">
+                                <div id="email id-error" class="error-message"></div>
+                            </div>
+                            <!--<div class="col-lg-6">
+                                <p>Email</p>
+                                <input id="email" name="email" placeholder="Email" type="email" class="input-text"
+                                    required>
+                            </div>-->
+                            <div class="col-lg-6">
+                                <p>Password</p>
+                                <input type="password" id="password" name="password" placeholder="Enter your password">
+                                <div id="password-error" class="error-message"></div>
+                            </div>
+                            <button type="submit" name="login_btn" class="btn">Login</button>
+                        </form>
+                        <div class="error-message">
+                            <?php       
+                                // Output error message (can be handled on the same page or redirected to another)
+                                if (!empty($error_message)) {
+                                    echo "<p>'$error_message'</p>";
+                                }
+                            ?>
+                        </div>
+                        <!--</div>
+                        <p>Message</p>
+                        <textarea id="message" name="message" class="input-textarea" placeholder="Write something ..."
+                            required></textarea>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="check" name="check" value="check" required>
+                            <label for="check">You accept the terms of service and the privacy policy</label>
+                        </div>
+                        <button class="btn btn-sm" type="submit">Send message</button>
+                        <div class="success-box" style="display:none;">
+                            <div class="alert alert-success">Congratulations. Your message has been sent
+                                successfully</div>
+                        </div>
+                        <div class="error-box" style="display:none;">
+                            <div class="alert alert-warning">Error, please retry. Your message has not been sent
+                            </div>
+                        </div>-->
+
+                    </form>
+
+                </div>
+                <!--<div class="col-lg-4">
+                    <div class="title">
+                        <h2>Contacts</h2>
+                        <p>Information</p>
+                    </div>
+                    <ul class="text-list text-list-line">
+                        <li><b>Address</b>
+                            <hr />
+                            <p>EVEREST APARTMENTS CO-OP. <br> HOUSING SOCIETY LTD <br>OPP: MOUNT PLEASANT ROAD,
+                                <br>MALABAR HILL
+                            </p>
+                        </li>
+
+                        <li><b>Email</b>
+                            <hr />
+                            <p>everestapts@gmail.com</p>
+                        </li>
+                        <li><b>Phone</b>
+                            <hr />
+                            <p>022-23633911</p>
+                        </li>
+
+                    </ul>-->
+                    <hr class="space-sm" />
+                    <!-- <div class="icon-links icon-social icon-links-grid social-colors-hover">
+                        <a class="facebook"><i class="icon-facebook"></i></a>
+                        <a class="twitter"><i class="icon-twitter"></i></a>
+                        <a class="instagram"><i class="icon-instagram"></i></a>
+                        <a class="google"><i class="icon-google"></i></a>
+                    </div> -->
+                </div>
             </div>
         </div>
-        
-        <h2>Login</h2>
-        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
-            <div class="form-group">
-                <label for="email id">Username</label>
-                <input type="text" id="email id" name="email" placeholder="Enter your email id">
-                <div id="email id-error" class="error-message"></div>
+    </section>
+    </main>
+    <footer class="light">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-5" style="margin-right: 140px;">
+                    <img src="./media//logos//EverestLogo.png" class="mb-4" alt="">
+                    <p>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD.
+                        Located at Mount Pleasant Road, Malabar Hill,
+                        a prime residential area offering comfort and convenience.</p>
+                </div>
+                <div class="col-lg-5">
+                    <h3>Contacts</h3>
+                    <ul class="icon-list icon-line">
+                        <li>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD. OPP: MOUNT PLEASANT ROAD, MALABAR HILL</li>
+                        <li>everestapts@gmail.com</li>
+                        <li>022-23633911</li>
+                    </ul>
+                </div>
+                <!-- <div class="col-lg-4">
+                <div class="icon-links icon-social icon-links-grid social-colors">
+                    <a class="facebook"><i class="icon-facebook"></i></a>
+                    <a class="twitter"><i class="icon-twitter"></i></a>
+                    <a class="instagram"><i class="icon-instagram"></i></a>
+                    <a class="google"><i class="icon-google"></i></a>
+                </div> -->
+                <hr class="space-sm" />
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password">
-                <div id="password-error" class="error-message"></div>
-            </div>
-            <button type="submit" name="login_btn" class="btn">Login</button>
-        </form>
-        <div class="error-message">
-            <?php       
-                // Output error message (can be handled on the same page or redirected to another)
-                if (!empty($error_message)) {
-                    echo "<p>'$error_message'</p>";
-                }
-            ?>
         </div>
- 
+        <div class="footer-bar">
+            <div class="container">
+                <div class="d-flex justify-content-center align-items-center text-center py-3">
+                    <span>
+                        © 2024 EVEREST APARTMENTS CHS LTD - DEVELOPED BY
+                        <a href="https://www.theveenagroup.com/index.html" target="_blank">Veena Infotech</a>.
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <link rel="stylesheet" href="themekit/media/icons/iconsmind/line-icons.min.css">
+        <script src="themekit/scripts/parallax.min.js"></script>
+        <script src="themekit/scripts/glide.min.js"></script>
+        <script src="themekit/scripts/magnific-popup.min.js"></script>
+        <script src="themekit/scripts/tab-accordion.js"></script>
+        <script src="themekit/scripts/imagesloaded.min.js"></script>
+        <script src="themekit/scripts/progress.js" async></script>
+        <script src="themekit/scripts/custom.js" async></script>
+        <script src="themekit/scripts/contact-form/contact-form.js" async></script>
+        <script src="../../themekit.dev/tools/sidebar/sidebar.js" data-setting="alpins"></script>
+        <script src="https://kit.fontawesome.com/7260486d2e.js" crossorigin="anonymous"></script>
+
+    </footer>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Include Bootstrap CSS (if not already included) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--<script>
+        document.querySelector('.form-box').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent default form submission behavior
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            // Hide existing messages
+            document.querySelector('.success-box').style.display = 'none';
+            document.querySelector('.error-box').style.display = 'none';
+
+            // Send the form data via fetch
+            fetch('php-files/contactus.php', {
+                method: 'POST',
+                body: formData,
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    if (data.success) {
+                        document.querySelector('.success-box').style.display = 'block';
+                        document.querySelector('.form-box').reset();
+                    } else {
+                        document.querySelector('.error-box').style.display = 'block';
+                    }
+                })
+                .catch(() => {
+                    // Show error box if the request fails
+                    document.querySelector('.error-box').style.display = 'block';
+                });
+        });
+
+    </script>-->
 </body>
+
 </html>

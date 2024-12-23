@@ -125,7 +125,6 @@ $user_email = $_SESSION['email'];
         }
 
         .table tbody tr:hover {
-            background-color: #e6f7e6;
             /* Light green background on row hover */
             cursor: pointer;
             /* Change cursor to pointer on hover */
@@ -333,7 +332,9 @@ $user_email = $_SESSION['email'];
                                 <div class="content">
                                     <h4 class="title">
                                         <a class="clickLink" data-bs-toggle="modal"
-                                            data-bs-target="#CircularDated28thNov">SGM Notice _ Meeting Date-24th November 2024</a>
+                                            data-bs-target="#CircularDated28thNov">
+                                            SGBM Notice Meeting Date 24th November 2024
+                                            </a>
                                     </h4>
                                 </div>
                             </div>
@@ -349,8 +350,7 @@ $user_email = $_SESSION['email'];
                             <div class="blog-content">
                                 <div class="content">
                                     <h4 class="title"><a class="clickLink" data-bs-toggle="modal"
-                                            data-bs-target="#NoticeSGBM17th">Notice for Special General Body Meeting
-                                            17th Nov 2024</a></h4>
+                                            data-bs-target="#NoticeSGBM17th">SGBM Notice Meeting Date 24th November 2024</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -367,7 +367,7 @@ $user_email = $_SESSION['email'];
                                 </div>
                                 <div class="modal-body">
                                     <object width="100%" height="700"
-                                        data="./Documents/SGBM24NOV.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
+                                        data="./Documents//SGBM 24Nov24 Minutes.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
                                         type="application/pdf"> </object>
                                 </div>
                                 <div class="modal-footer">
@@ -402,7 +402,7 @@ $user_email = $_SESSION['email'];
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <iframe src="./Documents/SGMNOTICE.pdf?#zoom=10&scrollbar=0&toolbar=0&navpanes=0"
+                            <iframe src="./Documents//SGM Notice _ Meeting Date-24th November 2024.pdf?#zoom=15&scrollbar=0&toolbar=0&navpanes=0"
                                 width="100%" height="700" style="border: none;"></iframe>
 
                         </div>
@@ -820,6 +820,23 @@ $user_email = $_SESSION['email'];
         <script src="themekit/scripts/contact-form/contact-form.js" async></script>
         <script src="../../themekit.dev/tools/sidebar/sidebar.js" data-setting="alpins"></script>
         <script src="https://kit.fontawesome.com/7260486d2e.js" crossorigin="anonymous"></script>
+
+        <!---Disallows users to access Developer tools--->
+        <script>
+        // Disable right-click menu
+        document.addEventListener("contextmenu", (e) => {
+            e.preventDefault();
+        });
+
+        // Disable keyboard shortcuts like F12, Ctrl+Shift+I, Ctrl+Shift+C
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "F12" || 
+                (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "C" || e.key === "J")) || 
+                (e.ctrlKey && e.key === "U")) {
+                e.preventDefault();
+            }
+        });
+    </script>
 
     </footer>
 

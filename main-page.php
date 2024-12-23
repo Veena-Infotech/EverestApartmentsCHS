@@ -604,109 +604,86 @@ $user_email = $_SESSION['email'];
                 </table>
             </div>
         </section>
-        <section class="section-slider alpins-slider light section-full-width-left" data-slider-parallax="true"
-            data-interval="0" id="committe">
-            <div class="background-slider">
-                <div class="active" style="background-image:url(media/hd-3.jpg)"></div>
-                <div style="background-image:url(media/hd-4.jpg)"></div>
-                <div style="background-image:url(media/hd-5.jpg)"></div>
-                <div style="background-image:url(media/hd-6.jpg)"></div>
-                <div style="background-image:url(media/hd-7.jpg)"></div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <!-- Table with Advanced Styles -->
-                       <div class="table-container">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Destination</th>
-                                        <th>Contact Info</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Sanjay Menon</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=sanjay@sansula.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Shailesh Ghatlia</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=sghatalia@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dhiraj Mahtaney</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=dhiraj@apparelize.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jai Thakur</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=jaithakur@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Ajay Jain</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=ajaysck@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mekaal Godhwani</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=sovertan@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jalpa Vithalani</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=vithalani.family@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Anjali Shetty</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=anjushetty@me.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jagdish Moorjani</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=vidya.moorjani@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Karan Singh Dugal</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=karandugal@gmail.com&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Suveer Khemlani</td>
-                                        <td><a
-                                                href="https://mail.google.com/mail/?view=cm&fs=1&to=ushanp@usha.co.in&su=Subject%20Here&body=Compose%20your%20email%20here.">Contact
-                                                Now</a></td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-anima="fade-left" data-time="2000">
-                        <h1 class="text-lg text-uppercase text-black">Empowering Our Future: Meet the Committee</h1>
-                        <p>
-                        "Our dedicated committee members bring together a wealth of experience, passion, and vision to drive our initiatives forward. Together, they lead with purpose and inspire positive change."
-                        </p>
-                        <hr class="space hidden-md" />
-                    </div>
+        <section class="section-slider alpins-slider light section-full-width-left" data-slider-parallax="true" data-interval="0" id="committe">
+    <div class="background-slider">
+        <div class="active" style="background-image:url(media/hd-3.jpg)"></div>
+        <div style="background-image:url(media/hd-4.jpg)"></div>
+        <div style="background-image:url(media/hd-5.jpg)"></div>
+        <div style="background-image:url(media/hd-6.jpg)"></div>
+        <div style="background-image:url(media/hd-7.jpg)"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Responsive Table Section -->
+            <div class="col-lg-6 col-md-12">
+                <div>
+                    <table class="table table-bordered table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Member's Name</th>
+                                <th>Designation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sanjay Menon</td>
+                                <td>Hon. Chairman</td>
+                            </tr>
+                            <tr>
+                                <td>Shailesh Ghatlia</td>
+                                <td>Hon. Secretary</td>
+                            </tr>
+                            <tr>
+                                <td>Dhiraj Mahtaney</td>
+                                <td>Hon. Treasurer</td>
+                            </tr>
+                            <tr>
+                                <td>Jai Thakur</td>
+                                <td>Redevelopment Core Committee</td>
+                            </tr>
+                            <tr>
+                                <td>Ajay Jain</td>
+                                <td>Hon. Member</td>
+                            </tr>
+                            <tr>
+                                <td>Mekaal Godhwani</td>
+                                <td>Hon. Member</td>
+                            </tr>
+                            <tr>
+                                <td>Jalpa Vithalani</td>
+                                <td>Hon. Member</td>
+                            </tr>
+                            <tr>
+                                <td>Anjali Shetty</td>
+                                <td>Hon. Member</td>
+                            </tr>
+                            <tr>
+                                <td>Jagdish Moorjani</td>
+                                <td>Redevelopment Core Committee</td>
+                            </tr>
+                            <tr>
+                                <td>Karan Singh Dugal</td>
+                                <td>Redevelopment Core Committee</td>
+                            </tr>
+                            <tr>
+                                <td>Suveer Khemlani</td>
+                                <td>Associate Member</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </section>
+            <!-- Content Section -->
+            <div class="col-lg-6 col-md-12" data-anima="fade-left" data-time="2000">
+                <h1 class="text-lg text-uppercase text-black">Empowering Our Future: Meet the Committee</h1>
+                <p>
+                    "Our dedicated committee members bring together a wealth of experience, passion, and vision to drive our initiatives forward. Together, they lead with purpose and inspire positive change."
+                </p>
+                <hr class="space hidden-md" />
+            </div>
+        </div>
+    </div>
+</section>
 
 
 

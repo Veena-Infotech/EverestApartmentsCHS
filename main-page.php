@@ -137,7 +137,7 @@ $user_email = $_SESSION['email'];
         }
 
         .table td a {
-            color: #007bff;
+            color: #062754;
             /* Blue color for links */
             text-decoration: none;
             font-weight: bold;
@@ -185,7 +185,7 @@ $user_email = $_SESSION['email'];
         <div class="container">
             <div class="menu-brand">
                 <a href="#">
-                    <img src="./media//logos//EverestLogo.png" alt="">
+                    <img src="./media//logos//Everest_Apartments_CHS.png" alt="">
                     <!-- <img class="logo-default scroll-hide" src="media/logo-white-blue.svg" alt="logo" />
                     <img class="logo-retina scroll-hide" src="media/logo-white-blue.svg" alt="logo" />
                     <img class="logo-default scroll-show" src="media/logo-white-solid.svg" alt="logo" />
@@ -226,12 +226,12 @@ $user_email = $_SESSION['email'];
     </nav>
     <main>
         <section class="section-image section-full-width-right light ken-burn-center" data-parallax="scroll"
-            data-image-src="media/hd-1.jpg" id="home">
+            data-image-src="media/bg-3.jpg" id="home">
             <div class="container">
                 <hr class="space-lg" />
                 <hr class="space-sm" />
                 <div class="row">
-                    <div class="col-lg-6">
+                    <!--<div class="col-lg-6">
                         <h1 data-anima="fade-left" data-time="2000" class="text-lg text-uppercase text-black">Everest
                             Apartments CHS LTD</h1>
                         <hr class="space-lg" />
@@ -241,7 +241,7 @@ $user_email = $_SESSION['email'];
                                 <p class="quote">
                                     (Regn.No: BOM/HSG/556 of 1964, Dated: 13-01-1964)
                                 </p>
-                            </li>
+                            </li>-->
                             <!--<li>
                                 <p class="quote">
                                     When everything feels like an uphill struggle. Just wait and think of the view from the top.
@@ -311,6 +311,12 @@ $user_email = $_SESSION['email'];
         <!-- Your section with blog posts and modal triggers -->
         <section id="latest-documents" class="blog-area pt-125">
             <div class="container">
+            <hr class="space-sm" />
+                    <div class="col-lg-8">
+                        <div class="title">
+                            <h2>Important Documents</h2>
+                            <p>Stay informed and engaged with the latest updates, announcements, and minutes from our society meetings.</p>
+                        </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
 
@@ -327,8 +333,7 @@ $user_email = $_SESSION['email'];
                                 <div class="content">
                                     <h4 class="title">
                                         <a class="clickLink" data-bs-toggle="modal"
-                                            data-bs-target="#CircularDated28thNov">CIRCULAR DATED 28.11.2024 FOR BUILDER
-                                            INFORMATION</a>
+                                            data-bs-target="#CircularDated28thNov">SGM Notice _ Meeting Date-24th November 2024</a>
                                     </h4>
                                 </div>
                             </div>
@@ -372,7 +377,7 @@ $user_email = $_SESSION['email'];
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <!--<div class="col-lg-4">
                         <hr class="space-sm visible-sm" />
                         <div class="title">
                             <h2>Newly Provided Documents</h2>
@@ -384,7 +389,7 @@ $user_email = $_SESSION['email'];
                         </p>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </section>
 
@@ -461,22 +466,18 @@ $user_email = $_SESSION['email'];
                     <p>We live for the nature</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-6">
                         <p>
-                            Everest Apartments is a residential building located on Mount Pleasant Road in Malabar Hill,
-                            Mumbai. The property offers 2.5 BHK apartments with a carpet area of approximately 1,200
-                            square feet. Amenities include lift facilities and car parking.
+                        Everest Apartments is a residential building located on Mount Pleasant Road in Malabar Hill, Mumbai. The property offers spacious apartments. Amenities various facilities such as ample parking, a gym and lounge.
 
                         </p>
                     </div>
-                    <div class="col-lg-3 no-margin-md">
+                    <div class="col-lg-6 no-margin-md">
                         <p>
-                            Malabar Hill is an upscale residential area in South Mumbai, known for its affluent
-                            neighborhoods and proximity to landmarks such as the Hanging Gardens and Walkeshwar Temple.
-
+                        Malabar Hill is an upscale residential area in South Mumbai, known for its affluent neighborhoods and proximity to landmarks such as the Hanging Gardens, Priyadarshani Park and Chief Ministers residence Varsha.
                             <hr class="space-sm" />
                     </div>
-                    <div class="col-lg-6">
+                    <!--<div class="col-lg-6">
                         <ul class="accordion-list" data-open="1">
                             <li>
                                 <a href="#">Our mountains and our location</a>
@@ -510,7 +511,7 @@ $user_email = $_SESSION['email'];
                                     </p>
                                 </div>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div>
@@ -519,7 +520,7 @@ $user_email = $_SESSION['email'];
             <div class="container">
                 <div class="title align-center">
                     <h2>Societal highlights</h2>
-                    <p>We provide the best experience</p>
+                    <p>Experiences you can't miss!</p>
                 </div>
                 <table class="table table-grid table-border table-6-md">
                     <tbody>
@@ -547,7 +548,7 @@ $user_email = $_SESSION['email'];
                                     <i class="fa-regular fa-building"></i>
                                     <div class="caption">
                                         <h3>Spacious Apartments</h3>
-                                        <p>Offers modern 2.5 BHK units with elegant interiors.</p>
+                                        <p>Offers modern units with elegant interiors.</p>
                                     </div>
                                 </div>
                             </td>
@@ -616,7 +617,7 @@ $user_email = $_SESSION['email'];
                 <div class="row">
                     <div class="col-lg-6">
                         <!-- Table with Advanced Styles -->
-                        <div class="table-container">
+                       <div class="table-container">
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -717,7 +718,7 @@ $user_email = $_SESSION['email'];
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <hr class="space" />
+                <!--<hr class="space" />
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="title">
@@ -756,10 +757,11 @@ $user_email = $_SESSION['email'];
 
                         </form>
 
-                    </div>
-                    <div class="col-lg-4">
+                    </div>-->
+                    <hr class="space-sm" />
+                    <div class="col-lg-8">
                         <div class="title">
-                            <h2>Contacts</h2>
+                            <h2>Contact Us</h2>
                             <p>Information</p>
                         </div>
                         <ul class="text-list text-list-line">
@@ -796,7 +798,7 @@ $user_email = $_SESSION['email'];
         <div class="container">
             <div class="row ">
                 <div class="col-lg-5" style="margin-right: 140px;">
-                    <img src="./media//logos//EverestLogo.png" class="mb-4" alt="">
+                    <img src="./media//logos//Everest_Apartments_CHS.png" class="mb-4" alt="">
                     <p>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD.
                         Located at Mount Pleasant Road, Malabar Hill,
                         a prime residential area offering comfort and convenience.</p>
@@ -882,7 +884,5 @@ $user_email = $_SESSION['email'];
 
     </script>
 </body>
-
-<!-- Mirrored from templates.themekit.dev/alpins/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 21 Dec 2024 05:27:41 GMT -->
 
 </html>

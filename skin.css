@@ -36,22 +36,22 @@ div.cnt-box-info .cnt-info, footer, .cnt-box-testimonials-bubble > p, [class*=bo
 }
 
 .lan-menu .dropdown > ul > li > a, body > nav.scroll-menu:before, .title > p:before, .title > p:after, .quote .quote-author:before, .cnt-box-info .extra-field, .glide__bullets > button:hover, .glide__bullets > button.glide__bullet--active, .controls-right .glide__bullet, .media-box-reveal .extra-field, .media-box .caption h3:before, .bg-color, body main > section.bg-color, nav .dropdown > ul > li > a, body > header h2:after, body > header h2:before, .controls-out.arrows-left .glide__arrow:hover, .menu-cnt > ul > li > ul li > a, .album-box .caption h3:after, .menu-inner li:before, .cnt-box-blog-side .blog-date, .cnt-box-blog-top .blog-date, .section-home-alpins .glide__arrow, .menu-inner:not(.menu-inner-vertical) .dropdown ul > li > a, .step-item:before, .step-item > span, .shop-menu-cnt .cart-count {
-    background-color: #379cf4;
+    background-color: #062754;
 }
 
 .section-home-alpins .glide__bullets .glide__bullet.glide__bullet--active {
-    background-color: #379cf4 !important;
+    background-color: #062754 !important;
 }
 
 @media (max-width: 991.98px) {
     nav.scroll-menu .menu-cnt {
-        background-color: #379cf4;
+        background-color: #062754;
     }
 }
 
 .btn, .icon-links-grid a:hover, .icon-links-button a {
-    background-color: #379cf4;
-    border-color: #379cf4;
+    background-color: #062754;
+    border-color: #062754;
 }
 
 a, .counter .value span:last-child, .icon-box i, .cnt-box-info .cnt-info > div > span:last-child, .cnt-box-info .bottom-info, .btn-text, .menu-cnt > ul > li:hover > a, nav:not(.menu-transparent) .menu-cnt > ul > li:hover > a, .lan-menu > li:hover > a, nav:not(.menu-transparent) .lan-menu > li:hover > a, .timeline > div:hover .badge p, .cnt-box-team:hover .caption h2, .cnt-box-top-icon > i, .datepicker-panel > ul > li:hover, .extra-field:before, .menu-inner li.active > a, .menu-inner li:hover > a, .table-alpins td:first-child, .accordion-list > li > a:before, .cnt-box-blog-side .icon-list i, .cnt-box-blog-top .icon-list i, .list-nav a:before, .cnt-box .caption p b, .cnt-box-side-icon > i, .countdown h3, .countdown p, nav:not(.menu-transparent) .menu-mini .lan-menu > li:hover > a, nav .icon-list li > i {
@@ -59,15 +59,15 @@ a, .counter .value span:last-child, .icon-box i, .cnt-box-info .cnt-info > div >
 }
 
 .breadcrumb li a:hover, .light .breadcrumb li:not(:last-child) a:hover, .light .text-color, .text-color, .menu-inner .dropdown li:hover > a {
-    color: #379cf4 !important;
+    color: #062754 !important;
 }
 
 form.form-box textarea:focus, form.form-box select:focus, form.form-box input:focus, [data-parallax] .table td, .media-box-half .caption .extra-field + p, .timeline > div .panel, div.timeline > div.inverted .panel:last-child, .search-box-menu > input[type=text]:focus {
-    border-color: #379cf4;
+    border-color: #062754;
 }
 
 .lan-menu .dropdown > ul > li:hover > a, .btn:not(.btn-border):hover, .dropdown ul:not(.icon-list) li:hover > a, .menu-cnt > ul > li:hover > a, .lan-menu > li:hover > a, .icon-links-button a:hover, .pagination li.page:hover a, .pagination li.page.active a, .section-home-alpins .glide__arrow:hover, .menu-inner:not(.menu-inner-vertical) .dropdown ul > li:hover > a {
-    background-color: #3081c8;
+    background-color: #062754;
 }
 
 .btn-text:hover, .accordion-list > li > a:hover, .list-nav a:hover {
@@ -76,11 +76,11 @@ form.form-box textarea:focus, form.form-box select:focus, form.form-box input:fo
 
 @media (max-width: 991.98px) {
     nav.scroll-menu .dropdown > ul > li > a {
-        background-color: #3081c8;
+        background-color: #062754;
     }
 
     .menu-transparent:not(.scroll-menu) .menu-cnt > ul > li.dropdown.active > a {
-        color: #3081c8 !important;
+        color: #062754 !important;
     }
 }
 
@@ -421,7 +421,7 @@ main > section.section-base.section-home-alpins {
 .section-home-alpins .media-box-full .caption {
     width: 150px;
     height: 110px;
-    background: rgb(55, 156, 244);
+    background: #062754;
     right: -50px;
 }
 

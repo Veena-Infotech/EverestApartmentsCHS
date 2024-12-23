@@ -96,13 +96,13 @@ if (isset($_POST['login_btn'])) {
             margin-top: 1rem;
             font-size: 1rem;
             font-weight: bold;
-            color: #fff;
-            background: linear-gradient(90deg, #ff7eb3, #ff758c);
+            font-color: #ffffff;
+            background: linear-gradient(90deg,#8fbeff, #8fbeff);
             border: none;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(255, 117, 140, 0.3);
+            box-shadow: 0 4px 15px #062754;
             margin-top: 10%;
         }
         .error-message{
@@ -162,90 +162,11 @@ if (isset($_POST['login_btn'])) {
 
 <body class="page-main">
     <div id="preloader"></div>
-
-    <!--<nav class="menu-classic menu-fixed align-right" data-menu-anima="fade-in">
-        <div class="container">
-           <div class="menu-brand">
-                <a href="index.html">
-                    <img class="logo-default scroll-hide" src="media/logo-black-blue-solid.svg" alt="logo" />
-                    <img class="logo-retina scroll-hide" src="media/logo-black-blue-solid.svg" alt="logo" />
-                    <img class="logo-default scroll-show" src="media/logo-white-solid.svg" alt="logo" />
-                    <img class="logo-retina scroll-show" src="media/logo-white-solid.svg" alt="logo" />
-                </a>
-            </div>
-            <i class="menu-btn"></i>
-            <div class="menu-cnt">
-                <ul id="main-menu">
-                    <li class="dropdown">
-                        <a href="#">Home</a>
-                        <ul>
-                            <li><a href="index.html">Main</a></li>
-                            <li><a href="index-2.html">Home two</a></li>
-                            <li><a href="index-3.html">Home three</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Pages</a>
-                        <ul>
-                            <li class="dropdown-submenu">
-                                <a>About</a>
-                                <ul>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="team-2.html">Team two</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a>Special</a>
-                                <ul>
-                                    <li><a href="food.html">Food</a></li>
-                                    <li><a href="shelters.html">Shelters</a></li>
-                                    <li><a href="events.html">Events</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu">
-                                <a>Others</a>
-                                <ul>
-                                    <li><a href="prices.html">Prices</a></li>
-                                    <li><a href="history.html">History</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="elements/components/buttons.html">Elements</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="treks.html">Treks</a>
-                        <ul>
-                            <li><a href="treks.html">Treks</a></li>
-                            <li><a href="treks-single.html">Single trek</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contacts.html">Contacts</a>
-                    </li>
-                </ul>
-                <div class="menu-right">
-                    <ul class="lan-menu">
-                        <li class="dropdown">
-                            <a href="#"><img src="media/en.png" alt="lang" />EN </a>
-                            <ul>
-                                <li><a href="#"><img src="media/it.png" alt="lang" />IT</a></li>
-                                <li><a href="#"><img src="media/es.png" alt="lang" />ES</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>-->
     </div>
     </div>
     </nav>
     <header class="header-image ken-burn-center light" data-parallax="true" data-natural-height="1080"
-        data-natural-width="1920" data-bleed="0" data-image-src="media/hd-1.jpg" data-offset="0">
+        data-natural-width="1920" data-bleed="0" data-image-src="media/bg.jpg" data-offset="0">
         <div class="container">
             <h1>Everest Apartments CHS</h1>
             <h2>(Regn.No: BOM/HSG/556 of 1964, Dated: 13-01-1964)</h2>
@@ -379,7 +300,7 @@ if (isset($_POST['login_btn'])) {
         <div class="container">
             <div class="row ">
                 <div class="col-lg-5" style="margin-right: 140px;">
-                    <img src="./media//logos//EverestLogo.png" class="mb-4" alt="">
+                    <img src="./media//logos//Everest_Apartments_CHS.png" class="mb-4" alt="">
                     <p>EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD.
                         Located at Mount Pleasant Road, Malabar Hill,
                         a prime residential area offering comfort and convenience.</p>

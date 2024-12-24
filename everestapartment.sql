@@ -87,6 +87,8 @@ INSERT INTO `users` (`id`, `email_id`, `password`) VALUES
 (47, 'rtlalvani@yahoo.com', '152_@_Ranjit'),
 (48, 'anuragadlakha@gmail.com', '153__%_Anurag'),
 (49, 'admin@gmail.com', 'everestlog1');
+(50, 'admin@mail.com', 'admin@123');
+
 
 --
 -- Indexes for dumped tables

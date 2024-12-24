@@ -160,21 +160,27 @@ $user_email = $_SESSION['email'];
                 /* Smaller font size on mobile */
             }
         }
+
         .logout-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    color: red;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
+            display: inline-block;
+            padding: 10px 20px;
+            color: red;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
 
-.logout-btn:hover {
-    background-color: darkred;
-}
+        .logout-btn:hover {
+            background-color: darkred;
+        }
 
+        #latest-documents {
+            background-color: white;
+        }
+
+      
     </style>
 </head>
 
@@ -193,33 +199,33 @@ $user_email = $_SESSION['email'];
             </div>
             <i class="menu-btn"></i>
             <div class="menu-cnt">
-    <ul id="main-menu">
-        <li class="dropdown">
-            <a href="#home">Home</a>
-            <!--<ul>
+                <ul id="main-menu">
+                    <li class="dropdown">
+                        <a href="#home">Home</a>
+                        <!--<ul>
                 <li><a href="index.html">Main</a></li>
                 <li><a href="index-2.html">Home two</a></li>
                 <li><a href="index-3.html">Home three</a></li>
             </ul>-->
-        </li>
-        <li class="dropdown">
-            <a href="#latest-documents">Latest Documents</a>
-        </li>
-        <li class="dropdown">
-            <a href="#about-us">About Us</a>
-        </li>
-        <li>
-            <a href="#committe">Managing Committee</a>
-        </li>
-        <li>
-            <a href="#contact-us">Contact Us</a>
-        </li>
-        <li style="color: red;">
-    <a href="./php-files/logout.php" class="logout-btn">Logout</a>
-</li>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#latest-documents">Latest Documents</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#about-us">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#committe">Managing Committee</a>
+                    </li>
+                    <li>
+                        <a href="#contact-us">Contact Us</a>
+                    </li>
+                    <li style="color: red;">
+                        <a href="./php-files/logout.php" class="logout-btn">Logout</a>
+                    </li>
 
-    </ul>
-</div>
+                </ul>
+            </div>
 
         </div>
     </nav>
@@ -241,15 +247,15 @@ $user_email = $_SESSION['email'];
                                     (Regn.No: BOM/HSG/556 of 1964, Dated: 13-01-1964)
                                 </p>
                             </li>-->
-                            <!--<li>
+                    <!--<li>
                                 <p class="quote">
                                     When everything feels like an uphill struggle. Just wait and think of the view from the top.
                                     <span class="quote-author">Wislawa Symborska</span>
                                 </p>
                             </li>-->
-                        </ul>
-                    </div>
-                    <!--<div class="col-lg-6">
+                    </ul>
+                </div>
+                <!--<div class="col-lg-6">
                         <hr class="space-xs" />
                         <div class="counter counter-vertical counter-icon">
                             <div>
@@ -280,104 +286,177 @@ $user_email = $_SESSION['email'];
                                 </div>
                             </div>
                         </div>-->
-                    <hr class="space" />
-                    <ul class="slider"
-                        data-options="type:carousel,nav:true,perView:3,perViewLg:2,perViewSm:1,gap:30,autoplay:3000">
-                        <li>
-                            <a class="img-box lightbox" href="./Images/Everest1.jpg" data-lightbox-anima="fade-top">
-                                <img src="./Images/Everest1.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="img-box lightbox" href="./Images/Everest2.jpg" data-lightbox-anima="fade-top">
-                                <img src="./Images/Everest2.jpg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a class="img-box lightbox" href="./Images/Everest3.jpg" data-lightbox-anima="fade-top">
-                                <img src="./Images/Everest3.jpg" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <hr class="space" />
+
+
+
+            </div>
             </div>
             <hr class="space-lg" />
             </div>
         </section>
         <!---modal section-->
+        <section class="section-base ">
+            <div class="container">
+                <div class="title align-center">
+                    <h2>Societal highlights</h2>
+                    <p>Experiences you can't miss!</p>
+                </div>
+                <table class=" table-grid  table-6-md ">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div class="caption">
+                                        <h3>Prime Location</h3>
+                                        <p>Situated in upscale Malabar Hills near iconic landmarks.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-solid fa-street-view"></i>
+                                    <div class="caption">
+                                        <h3>Scenic Views</h3>
+                                        <p>Overlooks the Arabian Sea, greenery, and Mumbai’s cityscape.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-regular fa-building"></i>
+                                    <div class="caption">
+                                        <h3>Spacious Apartments</h3>
+                                        <p>Offers modern units with elegant interiors.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-regular fa-face-smile"></i>
+                                    <div class="caption">
+                                        <h3>Luxury Living</h3>
+                                        <p>Premium construction with high-end finishes and amenities.</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-solid fa-square-parking"></i>
+                                    <div class="caption">
+                                        <h3>Convenient Amenities</h3>
+                                        <p>Includes elevators, parking, and 24/7 security systems</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-solid fa-road"></i>
+                                    <div class="caption">
+                                        <h3>Great Connectivity</h3>
+                                        <p>Easily accessible via major roads and public transport options</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="im-globe"></i>
+                                    <div class="caption">
+                                        <h3>Prestigious Neighborhood</h3>
+                                        <p>Peaceful, safe, and surrounded by elite residential buildings</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-solid fa-tree"></i>
+                                    <div class="caption">
+                                        <h3>Nearby Essentials</h3>
+                                        <p>Close to schools, hospitals, markets, and recreational spots</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
 
         <!-- Your section with blog posts and modal triggers -->
         <section id="latest-documents" class="blog-area pt-125">
             <div class="container">
-            <hr class="space-sm" />
-                    <div class="col-lg-8">
-                        <div class="title">
-                            <h2>Important Documents</h2>
-                            <p>Stay informed and engaged with the latest updates, announcements, and minutes from our society meetings.</p>
-                        </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-
+                <hr class="space-sm" />
+                <div class="col-lg-8">
+                    <div class="title">
+                        <h2>Important Documents</h2>
+                        <p>Stay informed and engaged with the latest updates, announcements, and minutes from our society meetings.</p>
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <!-- First Blog Post -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog mt-30">
-                            <div class="blog-image">
-                                <img src="./Images/Note2.png" alt="CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION">
-                            </div>
-                            <div class="blog-content">
-                                <div class="content">
-                                    <h4 class="title">
-                                        <a class="clickLink" data-bs-toggle="modal"
-                                            data-bs-target="#CircularDated28thNov">
-                                            SGBM Minutes Meeting Date 24th November 2024
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <!-- First Blog Post -->
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-blog mt-30">
+                                <div class="blog-image">
+                                    <img src="./Images/Note2.png" alt="CIRCULAR DATED 28.11.2024 FOR BUILDER INFORMATION">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content">
+                                        <h4 class="title">
+                                            <a class="clickLink" data-bs-toggle="modal"
+                                                data-bs-target="#CircularDated28thNov">
+                                                SGBM Minutes Meeting Date 24th November 2024
                                             </a>
-                                    </h4>
+                                        </h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single-blog mt-30">
-                            <div class="blog-image">
-                                <img src="./Images//Note1.png"
-                                    alt="Notice  for Special General Body Meeting 17th Nov 2024">
-                            </div>
-                            <div class="blog-content">
-                                <div class="content">
-                                    <h4 class="title"><a class="clickLink" data-bs-toggle="modal"
-                                            data-bs-target="#NoticeSGBM17th">SGBM Notice Meeting Date 24th November 2024</a></h4>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-blog mt-30">
+                                <div class="blog-image">
+                                    <img src="./Images//Note1.png"
+                                        alt="Notice  for Special General Body Meeting 17th Nov 2024">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content">
+                                        <h4 class="title"><a class="clickLink" data-bs-toggle="modal"
+                                                data-bs-target="#NoticeSGBM17th">SGBM Notice Meeting Date 24th November 2024</a></h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Modal for Circular Dated 28th Nov (error in zooming) -->
-                    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov"
-                        tabindex="-1" aria-labelledby="CircularDated28thNovLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <object width="100%" height="700"
-                                        data="./Documents//SGBM 24Nov24 Minutes.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
-                                        type="application/pdf"> </object>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
+                        <!-- Modal for Circular Dated 28th Nov (error in zooming) -->
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov"
+                            tabindex="-1" aria-labelledby="CircularDated28thNovLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <object width="100%" height="700"
+                                            data="./Documents//SGBM 24Nov24 Minutes.pdf?#zoom=85&scrollbar=0&toolbar=0&navpanes=0"
+                                            type="application/pdf"> </object>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!--<div class="col-lg-4">
+                        <!--<div class="col-lg-4">
                         <hr class="space-sm visible-sm" />
                         <div class="title">
                             <h2>Newly Provided Documents</h2>
@@ -468,13 +547,13 @@ $user_email = $_SESSION['email'];
                 <div class="row">
                     <div class="col-lg-6">
                         <p>
-                        Everest Apartments is a residential building located on Mount Pleasant Road in Malabar Hill, Mumbai. The property offers spacious apartments. Amenities various facilities such as ample parking, a gym and lounge.
+                            Everest Apartments is a residential building located on Mount Pleasant Road in Malabar Hill, Mumbai. The property offers spacious apartments. Amenities various facilities such as ample parking, a gym and lounge.
 
                         </p>
                     </div>
                     <div class="col-lg-6 no-margin-md">
                         <p>
-                        Malabar Hill is an upscale residential area in South Mumbai, known for its affluent neighborhoods and proximity to landmarks such as the Hanging Gardens, Priyadarshani Park and Chief Ministers residence Varsha.
+                            Malabar Hill is an upscale residential area in South Mumbai, known for its affluent neighborhoods and proximity to landmarks such as the Hanging Gardens, Priyadarshani Park and Chief Ministers residence Varsha.
                             <hr class="space-sm" />
                     </div>
                     <!--<div class="col-lg-6">
@@ -512,178 +591,91 @@ $user_email = $_SESSION['email'];
                                 </div>
                             </li>
                         </ul>-->
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section-slider alpins-slider light section-full-width-left" data-slider-parallax="true" data-interval="0" id="committe">
+            <div class="background-slider">
+                <div class="active" style="background-image:url(media/hd-3.jpg)"></div>
+                <div style="background-image:url(media/hd-4.jpg)"></div>
+                <div style="background-image:url(media/hd-5.jpg)"></div>
+                <div style="background-image:url(media/hd-6.jpg)"></div>
+                <div style="background-image:url(media/hd-7.jpg)"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- Responsive Table Section -->
+                    <div class="col-lg-6 col-md-12">
+                        <div>
+                            <table class="table table-bordered table-striped">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Member's Name</th>
+                                        <th>Designation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Sanjay Menon</td>
+                                        <td>Hon. Chairman</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shailesh Ghatlia</td>
+                                        <td>Hon. Secretary</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dhiraj Mahtaney</td>
+                                        <td>Hon. Treasurer</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jai Thakur</td>
+                                        <td>Redevelopment Core Committee</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ajay Jain</td>
+                                        <td>Hon. Member</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mekaal Godhwani</td>
+                                        <td>Hon. Member</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jalpa Vithalani</td>
+                                        <td>Hon. Member</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anjali Shetty</td>
+                                        <td>Hon. Member</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jagdish Moorjani</td>
+                                        <td>Redevelopment Core Committee</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Karan Singh Dugal</td>
+                                        <td>Redevelopment Core Committee</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suveer Khemlani</td>
+                                        <td>Associate Member</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Content Section -->
+                    <div class="col-lg-6 col-md-12" data-anima="fade-left" data-time="2000">
+                        <h1 class="text-lg text-uppercase text-black">Empowering Our Future: Meet the Committee</h1>
+                        <p>
+                            "Our dedicated committee members bring together a wealth of experience, passion, and vision to drive our initiatives forward. Together, they lead with purpose and inspire positive change."
+                        </p>
+                        <hr class="space hidden-md" />
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-base">
-            <div class="container">
-                <div class="title align-center">
-                    <h2>Societal highlights</h2>
-                    <p>Experiences you can't miss!</p>
-                </div>
-                <table class="table table-grid table-border table-6-md">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    <div class="caption">
-                                        <h3>Prime Location</h3>
-                                        <p>Situated in upscale Malabar Hills near iconic landmarks.</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="fa-solid fa-street-view"></i>
-                                    <div class="caption">
-                                        <h3>Scenic Views</h3>
-                                        <p>Overlooks the Arabian Sea, greenery, and Mumbai’s cityscape.</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="fa-regular fa-building"></i>
-                                    <div class="caption">
-                                        <h3>Spacious Apartments</h3>
-                                        <p>Offers modern units with elegant interiors.</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="fa-regular fa-face-smile"></i>
-                                    <div class="caption">
-                                        <h3>Luxury Living</h3>
-                                        <p>Premium construction with high-end finishes and amenities.</p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="fa-solid fa-square-parking"></i>
-                                    <div class="caption">
-                                        <h3>Convenient Amenities</h3>
-                                        <p>Includes elevators, parking, and 24/7 security systems</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="fa-solid fa-road"></i>
-                                    <div class="caption">
-                                        <h3>Great Connectivity</h3>
-                                        <p>Easily accessible via major roads and public transport options</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="im-globe"></i>
-                                    <div class="caption">
-                                        <h3>Prestigious Neighborhood</h3>
-                                        <p>Peaceful, safe, and surrounded by elite residential buildings</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="icon-box icon-box-top align-center">
-                                    <i class="fa-solid fa-tree"></i>
-                                    <div class="caption">
-                                        <h3>Nearby Essentials</h3>
-                                        <p>Close to schools, hospitals, markets, and recreational spots</p>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <section class="section-slider alpins-slider light section-full-width-left" data-slider-parallax="true" data-interval="0" id="committe">
-    <div class="background-slider">
-        <div class="active" style="background-image:url(media/hd-3.jpg)"></div>
-        <div style="background-image:url(media/hd-4.jpg)"></div>
-        <div style="background-image:url(media/hd-5.jpg)"></div>
-        <div style="background-image:url(media/hd-6.jpg)"></div>
-        <div style="background-image:url(media/hd-7.jpg)"></div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <!-- Responsive Table Section -->
-            <div class="col-lg-6 col-md-12">
-                <div>
-                    <table class="table table-bordered table-striped">
-                        <thead class="thead-dark">
-                            <tr>
-                                <th>Member's Name</th>
-                                <th>Designation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Sanjay Menon</td>
-                                <td>Hon. Chairman</td>
-                            </tr>
-                            <tr>
-                                <td>Shailesh Ghatlia</td>
-                                <td>Hon. Secretary</td>
-                            </tr>
-                            <tr>
-                                <td>Dhiraj Mahtaney</td>
-                                <td>Hon. Treasurer</td>
-                            </tr>
-                            <tr>
-                                <td>Jai Thakur</td>
-                                <td>Redevelopment Core Committee</td>
-                            </tr>
-                            <tr>
-                                <td>Ajay Jain</td>
-                                <td>Hon. Member</td>
-                            </tr>
-                            <tr>
-                                <td>Mekaal Godhwani</td>
-                                <td>Hon. Member</td>
-                            </tr>
-                            <tr>
-                                <td>Jalpa Vithalani</td>
-                                <td>Hon. Member</td>
-                            </tr>
-                            <tr>
-                                <td>Anjali Shetty</td>
-                                <td>Hon. Member</td>
-                            </tr>
-                            <tr>
-                                <td>Jagdish Moorjani</td>
-                                <td>Redevelopment Core Committee</td>
-                            </tr>
-                            <tr>
-                                <td>Karan Singh Dugal</td>
-                                <td>Redevelopment Core Committee</td>
-                            </tr>
-                            <tr>
-                                <td>Suveer Khemlani</td>
-                                <td>Associate Member</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!-- Content Section -->
-            <div class="col-lg-6 col-md-12" data-anima="fade-left" data-time="2000">
-                <h1 class="text-lg text-uppercase text-black">Empowering Our Future: Meet the Committee</h1>
-                <p>
-                    "Our dedicated committee members bring together a wealth of experience, passion, and vision to drive our initiatives forward. Together, they lead with purpose and inspire positive change."
-                </p>
-                <hr class="space hidden-md" />
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
@@ -735,39 +727,39 @@ $user_email = $_SESSION['email'];
                         </form>
 
                     </div>-->
+                <hr class="space-sm" />
+                <div class="col-lg-8">
+                    <div class="title">
+                        <h2>Contact Us</h2>
+                        <p>Information</p>
+                    </div>
+                    <ul class="text-list text-list-line">
+                        <li><b>Address</b>
+                            <hr />
+                            <p>EVEREST APARTMENTS CO-OP. <br> HOUSING SOCIETY LTD <br>OPP: MOUNT PLEASANT ROAD,
+                                <br>MALABAR HILL
+                            </p>
+                        </li>
+
+                        <li><b>Email</b>
+                            <hr />
+                            <p>everestapts@gmail.com</p>
+                        </li>
+                        <li><b>Phone</b>
+                            <hr />
+                            <p>022-23633911</p>
+                        </li>
+
+                    </ul>
                     <hr class="space-sm" />
-                    <div class="col-lg-8">
-                        <div class="title">
-                            <h2>Contact Us</h2>
-                            <p>Information</p>
-                        </div>
-                        <ul class="text-list text-list-line">
-                            <li><b>Address</b>
-                                <hr />
-                                <p>EVEREST APARTMENTS CO-OP. <br> HOUSING SOCIETY LTD <br>OPP: MOUNT PLEASANT ROAD,
-                                    <br>MALABAR HILL
-                                </p>
-                            </li>
-
-                            <li><b>Email</b>
-                                <hr />
-                                <p>everestapts@gmail.com</p>
-                            </li>
-                            <li><b>Phone</b>
-                                <hr />
-                                <p>022-23633911</p>
-                            </li>
-
-                        </ul>
-                        <hr class="space-sm" />
-                        <!-- <div class="icon-links icon-social icon-links-grid social-colors-hover">
+                    <!-- <div class="icon-links icon-social icon-links-grid social-colors-hover">
                             <a class="facebook"><i class="icon-facebook"></i></a>
                             <a class="twitter"><i class="icon-twitter"></i></a>
                             <a class="instagram"><i class="icon-instagram"></i></a>
                             <a class="google"><i class="icon-google"></i></a>
                         </div> -->
-                    </div>
                 </div>
+            </div>
             </div>
         </section>
     </main>
@@ -795,7 +787,7 @@ $user_email = $_SESSION['email'];
                         <a class="instagram"><i class="icon-instagram"></i></a>
                         <a class="google"><i class="icon-google"></i></a>
                     </div> -->
-                    <hr class="space-sm" />
+                <hr class="space-sm" />
             </div>
         </div>
         <div class="footer-bar">
@@ -823,20 +815,20 @@ $user_email = $_SESSION['email'];
 
         <!---Disallows users to access Developer tools--->
         <script>
-        // Disable right-click menu
-        document.addEventListener("contextmenu", (e) => {
-            e.preventDefault();
-        });
-
-        // Disable keyboard shortcuts like F12, Ctrl+Shift+I, Ctrl+Shift+C
-        document.addEventListener("keydown", (e) => {
-            if (e.key === "F12" || 
-                (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "C" || e.key === "J")) || 
-                (e.ctrlKey && e.key === "U")) {
+            // Disable right-click menu
+            document.addEventListener("contextmenu", (e) => {
                 e.preventDefault();
-            }
-        });
-    </script>
+            });
+
+            // Disable keyboard shortcuts like F12, Ctrl+Shift+I, Ctrl+Shift+C
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "F12" ||
+                    (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "C" || e.key === "J")) ||
+                    (e.ctrlKey && e.key === "U")) {
+                    e.preventDefault();
+                }
+            });
+        </script>
 
     </footer>
 
@@ -846,7 +838,7 @@ $user_email = $_SESSION['email'];
     <!-- Include Bootstrap CSS (if not already included) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script>
-        document.querySelector('.form-box').addEventListener('submit', function (e) {
+        document.querySelector('.form-box').addEventListener('submit', function(e) {
             e.preventDefault(); // Prevent default form submission behavior
 
             const form = e.target;
@@ -858,9 +850,9 @@ $user_email = $_SESSION['email'];
 
             // Send the form data via fetch
             fetch('php-files/contactus.php', {
-                method: 'POST',
-                body: formData,
-            })
+                    method: 'POST',
+                    body: formData,
+                })
                 .then((response) => response.json())
                 .then((data) => {
                     if (data.success) {
@@ -875,7 +867,6 @@ $user_email = $_SESSION['email'];
                     document.querySelector('.error-box').style.display = 'block';
                 });
         });
-
     </script>
 </body>
 

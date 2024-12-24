@@ -435,6 +435,21 @@ $user_email = $_SESSION['email'];
                             </div>
                         </div>
 
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-blog mt-30">
+                                <div class="blog-image">
+                                    <img src="./Images//Note3.png"
+                                        alt="Notice  for Special General Body Meeting 17th Nov 2024">
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content">
+                                        <h4 class="title"><a class="clickLink" data-bs-toggle="modal"
+                                                data-bs-target="#Notice2024">20241224 Draft V6 Everest Apartments CHSL Request for Proposal(RFP)</a></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Modal for Circular Dated 28th Nov (error in zooming) -->
                         <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="CircularDated28thNov"
                             tabindex="-1" aria-labelledby="CircularDated28thNovLabel" aria-hidden="true">
@@ -482,6 +497,30 @@ $user_email = $_SESSION['email'];
                         </div>
                         <div class="modal-body">
                             <iframe src="./Documents//SGM Notice _ Meeting Date-24th November 2024.pdf?#zoom=15&scrollbar=0&toolbar=0&navpanes=0"
+                                width="100%" height="700" style="border: none;"></iframe>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section>
+            <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="Notice2024" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe src=".//Documents//20241224 Revised Draft V6 Everest Apartments CHSL - CC.pdf?#zoom=70&scrollbar=0&toolbar=0&navpanes=0"
                                 width="100%" height="700" style="border: none;"></iframe>
 
                         </div>

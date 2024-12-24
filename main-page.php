@@ -676,6 +676,177 @@ $user_email = $_SESSION['email'];
                 </div>
             </div>
         </section>
+<<<<<<< HEAD
+=======
+        <section class="section-base">
+            <div class="container">
+                <div class="title align-center">
+                    <h2>Societal highlights</h2>
+                    <p>Experiences you can't miss!</p>
+                </div>
+                <table class="table table-grid table-border table-6-md">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <div class="caption">
+                                        <h3>Prime Location</h3>
+                                        <p>Situated in upscale Malabar Hills near iconic landmarks.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-solid fa-street-view"></i>
+                                    <div class="caption">
+                                        <h3>Scenic Views</h3>
+                                        <p>Overlooks the Arabian Sea, greenery, and Mumbai’s cityscape.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-regular fa-building"></i>
+                                    <div class="caption">
+                                        <h3>Spacious Apartments</h3>
+                                        <p>Offers modern units with elegant interiors.</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-regular fa-face-smile"></i>
+                                    <div class="caption">
+                                        <h3>Luxury Living</h3>
+                                        <p>Premium construction with high-end finishes and amenities.</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-solid fa-square-parking"></i>
+                                    <div class="caption">
+                                        <h3>Convenient Amenities</h3>
+                                        <p>Includes elevators, parking, and 24/7 security systems</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-solid fa-road"></i>
+                                    <div class="caption">
+                                        <h3>Great Connectivity</h3>
+                                        <p>Easily accessible via major roads and public transport options</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="im-globe"></i>
+                                    <div class="caption">
+                                        <h3>Prestigious Neighborhood</h3>
+                                        <p>Peaceful, safe, and surrounded by elite residential buildings</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="icon-box icon-box-top align-center">
+                                    <i class="fa-solid fa-tree"></i>
+                                    <div class="caption">
+                                        <h3>Nearby Essentials</h3>
+                                        <p>Close to schools, hospitals, markets, and recreational spots</p>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="section-slider alpins-slider light section-full-width-left" data-slider-parallax="true" data-interval="0" id="committe">
+    <div class="background-slider">
+        <div class="active" style="background-image:url(media/bg.jpg)"></div>
+        <div style="background-image:url(media/hd-4.jpg)"></div>
+        <div style="background-image:url(media/hd-5.jpg)"></div>
+        <div style="background-image:url(media/hd-6.jpg)"></div>
+        <div style="background-image:url(media/hd-7.jpg)"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Responsive Table Section -->
+            <div class="col-lg-6 col-md-12">
+                <div>
+                    <table class="table table-bordered table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Member's Name</th>
+                                <th>Designation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sanjay Menon</td>
+                                <td>Hon. Chairman</td>
+                            </tr>
+                            <tr>
+                                <td>Shailesh Ghatlia</td>
+                                <td>Hon. Secretary</td>
+                            </tr>
+                            <tr>
+                                <td>Dhiraj Mahtaney</td>
+                                <td>Hon. Treasurer</td>
+                            </tr>
+                            <tr>
+                                <td>Jai Thakur</td>
+                                <td>Redevelopment Core Committee</td>
+                            </tr>
+                            <tr>
+                                <td>Ajay Jain</td>
+                                <td>Hon. Member</td>
+                            </tr>
+                            <tr>
+                                <td>Mekaal Godhwani</td>
+                                <td>Hon. Member</td>
+                            </tr>
+                            <tr>
+                                <td>Jalpa Vithalani</td>
+                                <td>Hon. Member</td>
+                            </tr>
+                            <tr>
+                                <td>Anjali Shetty</td>
+                                <td>Hon. Member</td>
+                            </tr>
+                            <tr>
+                                <td>Jagdish Moorjani</td>
+                                <td>Redevelopment Core Committee</td>
+                            </tr>
+                            <tr>
+                                <td>Karan Singh Dugal</td>
+                                <td>Redevelopment Core Committee</td>
+                            </tr>
+                            <tr>
+                                <td>Suveer Khemlani</td>
+                                <td>Associate Member</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Content Section -->
+            <div class="col-lg-6 col-md-12" data-anima="fade-left" data-time="2000">
+                <h1 class="text-lg text-uppercase text-black">Empowering Our Future: Meet the Committee</h1>
+                <p>
+                    "Our dedicated committee members bring together a wealth of experience, passion, and vision to drive our initiatives forward. Together, they lead with purpose and inspire positive change."
+                </p>
+                <hr class="space hidden-md" />
+            </div>
+        </div>
+    </div>
+</section>
+>>>>>>> 9d6542b593971e3388ff90b73c6c1db98caeb621
 
 
 
